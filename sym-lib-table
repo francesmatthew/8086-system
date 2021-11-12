@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name 28F010)(type Legacy)(uri ${KIPRJMOD}/Libraries/28F010.lib)(options "")(descr ""))
+  (lib (name DSUB-9)(type Legacy)(uri ${KIPRJMOD}/Libraries/DSUB-9.lib)(options "")(descr ""))
+  (lib (name LCD4x20)(type Legacy)(uri ${KIPRJMOD}/Libraries/LCD4x20.lib)(options "")(descr ""))
+  (lib (name max235cpg)(type Legacy)(uri ${KIPRJMOD}/Libraries/max235cpg.lib)(options "")(descr ""))
+  (lib (name pkd8279)(type Legacy)(uri ${KIPRJMOD}/Libraries/pkd8279.lib)(options "")(descr ""))
+)

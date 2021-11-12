@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DSUB-9
+D 9-pin UART serial interface
+$ENDCMP
+#
+#End Doc Library
