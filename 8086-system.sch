@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "8086-system"
 Date ""
 Rev ""
@@ -39,14 +39,15 @@ S 8950 3000 950  900
 U 626E3AF4
 F0 "external-connectors" 50
 F1 "external-connectors.sch" 50
-F2 "ADDRESS_BUS" O L 8950 3100 50 
-F3 "CLK" I L 8950 3450 50 
-F4 "~BHE" I L 8950 3600 50 
-F5 "~MRDC" I R 9900 3250 50 
-F6 "~MWTC" I R 9900 3350 50 
-F7 "~IORC" I R 9900 3450 50 
-F8 "~IOWC" I R 9900 3550 50 
-F9 "DATA_BUS" B L 8950 3200 50 
+F2 "CLK" I L 8950 3500 50 
+F3 "~BHE" I L 8950 3300 50 
+F4 "~MRDC" I R 9900 3250 50 
+F5 "~MWTC" I R 9900 3350 50 
+F6 "~IORC" I R 9900 3450 50 
+F7 "~IOWC" I R 9900 3550 50 
+F8 "DATA_BUS" B L 8950 3200 50 
+F9 "RESET" I L 8950 3600 50 
+F10 "ADDRESS_BUS" I L 8950 3100 50 
 $EndSheet
 Text Label 2000 3350 0    50   ~ 0
 ~BHE
@@ -64,8 +65,6 @@ Text Label 1150 3300 2    50   ~ 0
 READY
 Text Label 1150 3400 2    50   ~ 0
 RESET
-Text Label 1150 3600 2    50   ~ 0
-~TEST
 Text Label 1150 3700 2    50   ~ 0
 HOLD
 Text Label 1150 3800 2    50   ~ 0
@@ -74,9 +73,9 @@ Text Label 1150 4100 2    50   ~ 0
 INTR
 Text Label 1150 4200 2    50   ~ 0
 ~INTA
-Text Label 8950 3450 2    50   ~ 0
+Text Label 8950 3500 2    50   ~ 0
 CLK
-Text Label 8950 3600 2    50   ~ 0
+Text Label 8950 3300 2    50   ~ 0
 ~BHE
 Text Label 9900 3250 0    50   ~ 0
 ~MRDC
@@ -102,10 +101,10 @@ F 3 "~" H 1100 7210 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 62850EC1
 P 1500 7450
-F 0 "#PWR?" H 1500 7200 50  0001 C CNN
+F 0 "#PWR0101" H 1500 7200 50  0001 C CNN
 F 1 "GND" H 1505 7277 50  0000 C CNN
 F 2 "" H 1500 7450 50  0001 C CNN
 F 3 "" H 1500 7450 50  0001 C CNN
@@ -113,10 +112,10 @@ F 3 "" H 1500 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0102
 U 1 1 62851416
 P 1900 7150
-F 0 "#PWR?" H 1900 7000 50  0001 C CNN
+F 0 "#PWR0102" H 1900 7000 50  0001 C CNN
 F 1 "VCC" H 1915 7323 50  0000 C CNN
 F 2 "" H 1900 7150 50  0001 C CNN
 F 3 "" H 1900 7150 50  0001 C CNN
@@ -146,4 +145,57 @@ Wire Wire Line
 Wire Wire Line
 	1350 7450 1500 7450
 Connection ~ 1500 7450
+$Sheet
+S 1700 1050 750  550 
+U 6193175A
+F0 "clock-generator" 50
+F1 "clock-generator.sch" 50
+F2 "PCLK" O R 2450 1250 50 
+F3 "CLK" O R 2450 1150 50 
+F4 "RESET" O R 2450 1400 50 
+F5 "READY" O R 2450 1500 50 
+F6 "RDY1" I L 1700 1150 50 
+F7 "RDY2" I L 1700 1400 50 
+$EndSheet
+Text Label 2450 1150 0    50   ~ 0
+CLK
+Text Label 2450 1250 0    50   ~ 0
+PCLK
+Text Label 2450 1500 0    50   ~ 0
+READY
+Text Label 2450 1400 0    50   ~ 0
+RESET
+Wire Wire Line
+	1150 3600 800  3600
+$Comp
+L power:GND #PWR0103
+U 1 1 61966AE7
+P 800 3600
+F 0 "#PWR0103" H 800 3350 50  0001 C CNN
+F 1 "GND" H 805 3427 50  0000 C CNN
+F 2 "" H 800 3600 50  0001 C CNN
+F 3 "" H 800 3600 50  0001 C CNN
+	1    800  3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1150 1400 1400
+$Comp
+L power:VCC #PWR0104
+U 1 1 61967609
+P 1400 1150
+F 0 "#PWR0104" H 1400 1000 50  0001 C CNN
+F 1 "VCC" H 1415 1323 50  0000 C CNN
+F 2 "" H 1400 1150 50  0001 C CNN
+F 3 "" H 1400 1150 50  0001 C CNN
+	1    1400 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1400 1400 1400
+Wire Wire Line
+	1700 1150 1400 1150
+Connection ~ 1400 1150
+Text Label 8950 3600 2    50   ~ 0
+RESET
 $EndSCHEMATC

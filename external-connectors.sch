@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title "external-connectors"
 Date ""
 Rev ""
@@ -327,21 +327,15 @@ Wire Wire Line
 	8200 2050 8200 3600
 Wire Wire Line
 	8200 3600 7500 3600
-Text HLabel 4100 4750 0    50   Input ~ 0
+Text HLabel 4100 4750 0    50   Output ~ 0
 CLK
-Text HLabel 4600 4750 2    50   Input ~ 0
-~BHE
-Wire Bus Line
-	6050 1950 8550 1950
-Wire Bus Line
-	1900 1950 4650 1950
-Text HLabel 4100 4850 0    50   Input ~ 0
+Text HLabel 4100 4850 0    50   UnSpc ~ 0
 ~MRDC
 Text HLabel 4100 4950 0    50   Input ~ 0
 ~MWTC
-Text HLabel 4600 4850 2    50   Input ~ 0
+Text HLabel 4600 4850 2    50   Output ~ 0
 ~IORC
-Text HLabel 4600 4950 2    50   Input ~ 0
+Text HLabel 4600 4950 2    50   Output ~ 0
 ~IOWC
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J?
@@ -356,4 +350,12 @@ F 3 "~" H 4300 5050 50  0001 C CNN
 	1    4300 5050
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	6050 1950 8550 1950
+Wire Bus Line
+	1900 1950 4650 1950
+Text HLabel 4100 5050 0    50   Input ~ 0
+RESET
+Text HLabel 4600 4750 2    50   Output ~ 0
+~BHE
 $EndSCHEMATC

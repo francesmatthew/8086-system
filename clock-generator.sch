@@ -1,0 +1,238 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "clock-generator"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 "Editor: Brian Cruz"
+Comment4 "Designer: Matthew Frances"
+$EndDescr
+$Comp
+L Timer:8284 U?
+U 1 1 61931D8C
+P 5700 3600
+F 0 "U?" H 5700 4681 50  0000 C CNN
+F 1 "8284" H 5700 4590 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 5700 3600 50  0001 C CIN
+F 3 "http://www.cpu-galaxy.at/cpu/ram%20rom%20eprom/other_intel_chips/other_intel-Dateien/D8284A_Datasheet.pdf" H 5700 3600 50  0001 C CNN
+	1    5700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 619328EC
+P 5700 4500
+F 0 "#PWR0120" H 5700 4250 50  0001 C CNN
+F 1 "GND" H 5705 4327 50  0000 C CNN
+F 2 "" H 5700 4500 50  0001 C CNN
+F 3 "" H 5700 4500 50  0001 C CNN
+	1    5700 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0121
+U 1 1 619336A7
+P 5500 2350
+F 0 "#PWR0121" H 5500 2200 50  0001 C CNN
+F 1 "VCC" H 5515 2523 50  0000 C CNN
+F 2 "" H 5500 2350 50  0001 C CNN
+F 3 "" H 5500 2350 50  0001 C CNN
+	1    5500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61933DA5
+P 5350 2550
+F 0 "C?" V 5602 2550 50  0000 C CNN
+F 1 "100nF" V 5511 2550 50  0000 C CNN
+F 2 "" H 5388 2400 50  0001 C CNN
+F 3 "~" H 5350 2550 50  0001 C CNN
+	1    5350 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 2700 5500 2700
+Wire Wire Line
+	5500 2700 5500 2550
+$Comp
+L power:GND #PWR0122
+U 1 1 61939686
+P 5200 2550
+F 0 "#PWR0122" H 5200 2300 50  0001 C CNN
+F 1 "GND" H 5205 2377 50  0000 C CNN
+F 2 "" H 5200 2550 50  0001 C CNN
+F 3 "" H 5200 2550 50  0001 C CNN
+	1    5200 2550
+	1    0    0    -1  
+$EndComp
+Text HLabel 6400 3600 2    50   Output ~ 0
+PCLK
+Text HLabel 6400 3000 2    50   Output ~ 0
+CLK
+Text HLabel 6400 3400 2    50   Output ~ 0
+RESET
+Wire Wire Line
+	5000 3800 4850 3800
+Wire Wire Line
+	4850 3800 4850 4000
+Wire Wire Line
+	4850 4000 5000 4000
+$Comp
+L power:GND #PWR0123
+U 1 1 6193A636
+P 4850 4000
+F 0 "#PWR0123" H 4850 3750 50  0001 C CNN
+F 1 "GND" H 4855 3827 50  0000 C CNN
+F 2 "" H 4850 4000 50  0001 C CNN
+F 3 "" H 4850 4000 50  0001 C CNN
+	1    4850 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 4000
+$Comp
+L Device:Crystal Y?
+U 1 1 6193AF6D
+P 6800 4100
+F 0 "Y?" V 6754 4231 50  0000 L CNN
+F 1 "15MHz" V 6845 4231 50  0000 L CNN
+F 2 "" H 6800 4100 50  0001 C CNN
+F 3 "~" H 6800 4100 50  0001 C CNN
+	1    6800 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 3950 6600 3950
+Wire Wire Line
+	6600 3950 6600 4000
+Wire Wire Line
+	6600 4000 6400 4000
+Wire Wire Line
+	6400 4200 6600 4200
+Wire Wire Line
+	6600 4200 6600 4250
+Wire Wire Line
+	6600 4250 6800 4250
+NoConn ~ 5000 4200
+NoConn ~ 6400 3700
+Text Label 5000 3000 2    50   ~ 0
+~RES
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6193E6E5
+P 1750 1900
+F 0 "SW?" H 1750 2185 50  0000 C CNN
+F 1 "SW_Push" H 1750 2094 50  0000 C CNN
+F 2 "" H 1750 2100 50  0001 C CNN
+F 3 "~" H 1750 2100 50  0001 C CNN
+	1    1750 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 6193F4C8
+P 1550 2050
+F 0 "#PWR0124" H 1550 1800 50  0001 C CNN
+F 1 "GND" H 1555 1877 50  0000 C CNN
+F 2 "" H 1550 2050 50  0001 C CNN
+F 3 "" H 1550 2050 50  0001 C CNN
+	1    1550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6193FE29
+P 2250 1750
+F 0 "R?" H 2320 1796 50  0000 L CNN
+F 1 "10k" H 2320 1705 50  0000 L CNN
+F 2 "" V 2180 1750 50  0001 C CNN
+F 3 "~" H 2250 1750 50  0001 C CNN
+	1    2250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 619403B8
+P 2250 2050
+F 0 "C?" H 2365 2096 50  0000 L CNN
+F 1 "10uF" H 2365 2005 50  0000 L CNN
+F 2 "" H 2288 1900 50  0001 C CNN
+F 3 "~" H 2250 2050 50  0001 C CNN
+	1    2250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0125
+U 1 1 61940A3F
+P 2250 1600
+F 0 "#PWR0125" H 2250 1450 50  0001 C CNN
+F 1 "VCC" H 2265 1773 50  0000 C CNN
+F 2 "" H 2250 1600 50  0001 C CNN
+F 3 "" H 2250 1600 50  0001 C CNN
+	1    2250 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1900 1550 2050
+Wire Wire Line
+	1950 1900 2250 1900
+Connection ~ 2250 1900
+$Comp
+L power:GND #PWR0126
+U 1 1 619479EA
+P 2250 2200
+F 0 "#PWR0126" H 2250 1950 50  0001 C CNN
+F 1 "GND" H 2255 2027 50  0000 C CNN
+F 2 "" H 2250 2200 50  0001 C CNN
+F 3 "" H 2250 2200 50  0001 C CNN
+	1    2250 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1900 2550 1900
+Text Label 2850 1900 0    50   ~ 0
+~RES
+$Comp
+L Device:D D?
+U 1 1 6194EDFA
+P 2550 1750
+F 0 "D?" V 2504 1830 50  0000 L CNN
+F 1 "D" V 2595 1830 50  0000 L CNN
+F 2 "" H 2550 1750 50  0001 C CNN
+F 3 "~" H 2550 1750 50  0001 C CNN
+	1    2550 1750
+	0    1    1    0   
+$EndComp
+Connection ~ 2550 1900
+Wire Wire Line
+	2550 1900 2850 1900
+Wire Wire Line
+	2550 1600 2250 1600
+Connection ~ 2250 1600
+Text HLabel 6400 3200 2    50   Output ~ 0
+READY
+Text HLabel 5000 3200 0    50   Input ~ 0
+RDY1
+Text HLabel 5000 3300 0    50   Input ~ 0
+RDY2
+NoConn ~ 5000 3700
+Connection ~ 5500 2550
+Wire Wire Line
+	5500 2550 5500 2350
+Wire Wire Line
+	5000 3400 4850 3400
+Wire Wire Line
+	4850 3400 4850 3500
+Connection ~ 4850 3800
+Wire Wire Line
+	5000 3500 4850 3500
+Connection ~ 4850 3500
+Wire Wire Line
+	4850 3500 4850 3800
+$EndSCHEMATC
