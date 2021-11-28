@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "8086-system"
 Date ""
 Rev ""
@@ -33,6 +33,7 @@ F13 "~MWTC" O R 2000 3650 50
 F14 "~IORC" O R 2000 3800 50 
 F15 "~IOWC" O R 2000 3900 50 
 F16 "DATA_BUS" B R 2000 3200 50 
+F17 "M\\~IO" O R 2000 4050 50 
 $EndSheet
 $Sheet
 S 8950 3000 950  900 
@@ -86,65 +87,9 @@ Text Label 9900 3450 0    50   ~ 0
 Text Label 9900 3550 0    50   ~ 0
 ~IOWC
 Wire Bus Line
-	2000 3100 8950 3100
+	2000 3100 3750 3100
 Wire Bus Line
-	2000 3200 8950 3200
-$Comp
-L Connector:Barrel_Jack J?
-U 1 1 6284FC4C
-P 1050 7250
-F 0 "J?" H 1107 7575 50  0000 C CNN
-F 1 "Barrel_Jack" H 1107 7484 50  0000 C CNN
-F 2 "" H 1100 7210 50  0001 C CNN
-F 3 "~" H 1100 7210 50  0001 C CNN
-	1    1050 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0101
-U 1 1 62850EC1
-P 1500 7450
-F 0 "#PWR0101" H 1500 7200 50  0001 C CNN
-F 1 "GND" H 1505 7277 50  0000 C CNN
-F 2 "" H 1500 7450 50  0001 C CNN
-F 3 "" H 1500 7450 50  0001 C CNN
-	1    1500 7450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0102
-U 1 1 62851416
-P 1900 7150
-F 0 "#PWR0102" H 1900 7000 50  0001 C CNN
-F 1 "VCC" H 1915 7323 50  0000 C CNN
-F 2 "" H 1900 7150 50  0001 C CNN
-F 3 "" H 1900 7150 50  0001 C CNN
-	1    1900 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 62851EC8
-P 1650 7300
-F 0 "C?" H 1765 7346 50  0000 L CNN
-F 1 "100uF" H 1765 7255 50  0000 L CNN
-F 2 "" H 1688 7150 50  0001 C CNN
-F 3 "~" H 1650 7300 50  0001 C CNN
-	1    1650 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 7150 1650 7150
-Wire Wire Line
-	1900 7150 1650 7150
-Connection ~ 1650 7150
-Wire Wire Line
-	1650 7450 1500 7450
-Wire Wire Line
-	1350 7350 1350 7450
-Wire Wire Line
-	1350 7450 1500 7450
-Connection ~ 1500 7450
+	2000 3200 3850 3200
 $Sheet
 S 1700 1050 750  550 
 U 6193175A
@@ -198,4 +143,42 @@ Wire Wire Line
 Connection ~ 1400 1150
 Text Label 8950 3600 2    50   ~ 0
 RESET
+$Sheet
+S 2500 2000 1000 450 
+U 61A2E343
+F0 "CMOS-flash" 50
+F1 "CMOS-flash.sch" 50
+F2 "~MRDC" I L 2500 2300 50 
+F3 "DATA_BUS" B R 3500 2100 50 
+F4 "ADDRESS_BUS" I R 3500 2200 50 
+F5 "M\\~IO" I L 2500 2100 50 
+F6 "~BHE" I R 3500 2300 50 
+F7 "~MWTC" I L 2500 2200 50 
+$EndSheet
+Text Label 3500 2300 0    50   ~ 0
+~BHE
+Wire Bus Line
+	3500 2200 3750 2200
+Wire Bus Line
+	3750 2200 3750 3100
+Connection ~ 3750 3100
+Wire Bus Line
+	3750 3100 8950 3100
+Wire Bus Line
+	3500 2100 3850 2100
+Wire Bus Line
+	3850 2100 3850 3200
+Connection ~ 3850 3200
+Wire Bus Line
+	3850 3200 8950 3200
+Text Label 2500 2300 2    50   ~ 0
+~MRDC
+Text Label 2500 2300 2    50   ~ 0
+~MRDC
+Text Label 2500 2200 2    50   ~ 0
+~MWTC
+Text Label 2500 2100 2    50   ~ 0
+M\~IO
+Text Label 2000 4050 0    50   ~ 0
+M\~IO
 $EndSCHEMATC

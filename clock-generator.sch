@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title "clock-generator"
 Date ""
 Rev ""
@@ -36,40 +36,27 @@ F 3 "" H 5700 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0121
-U 1 1 619336A7
-P 5500 2350
-F 0 "#PWR0121" H 5500 2200 50  0001 C CNN
-F 1 "VCC" H 5515 2523 50  0000 C CNN
-F 2 "" H 5500 2350 50  0001 C CNN
-F 3 "" H 5500 2350 50  0001 C CNN
-	1    5500 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 61933DA5
-P 5350 2550
-F 0 "C?" V 5602 2550 50  0000 C CNN
-F 1 "100nF" V 5511 2550 50  0000 C CNN
-F 2 "" H 5388 2400 50  0001 C CNN
-F 3 "~" H 5350 2550 50  0001 C CNN
-	1    5350 2550
-	0    -1   -1   0   
+P 2250 3850
+F 0 "C?" V 2502 3850 50  0000 C CNN
+F 1 "100nF" V 2411 3850 50  0000 C CNN
+F 2 "" H 2288 3700 50  0001 C CNN
+F 3 "~" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5700 2700 5500 2700
-Wire Wire Line
-	5500 2700 5500 2550
 $Comp
 L power:GND #PWR0122
 U 1 1 61939686
-P 5200 2550
-F 0 "#PWR0122" H 5200 2300 50  0001 C CNN
-F 1 "GND" H 5205 2377 50  0000 C CNN
-F 2 "" H 5200 2550 50  0001 C CNN
-F 3 "" H 5200 2550 50  0001 C CNN
-	1    5200 2550
+P 2250 4000
+F 0 "#PWR0122" H 2250 3750 50  0001 C CNN
+F 1 "GND" H 2255 3827 50  0000 C CNN
+F 2 "" H 2250 4000 50  0001 C CNN
+F 3 "" H 2250 4000 50  0001 C CNN
+	1    2250 4000
 	1    0    0    -1  
 $EndComp
 Text HLabel 6400 3600 2    50   Output ~ 0
@@ -222,9 +209,6 @@ RDY1
 Text HLabel 5000 3300 0    50   Input ~ 0
 RDY2
 NoConn ~ 5000 3700
-Connection ~ 5500 2550
-Wire Wire Line
-	5500 2550 5500 2350
 Wire Wire Line
 	5000 3400 4850 3400
 Wire Wire Line
@@ -235,4 +219,56 @@ Wire Wire Line
 Connection ~ 4850 3500
 Wire Wire Line
 	4850 3500 4850 3800
+$Comp
+L power:VCC #PWR?
+U 1 1 61C7475F
+P 2250 3700
+F 0 "#PWR?" H 2250 3550 50  0001 C CNN
+F 1 "VCC" H 2265 3873 50  0000 C CNN
+F 2 "" H 2250 3700 50  0001 C CNN
+F 3 "" H 2250 3700 50  0001 C CNN
+	1    2250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61C74E11
+P 5500 2700
+F 0 "#PWR?" H 5500 2550 50  0001 C CNN
+F 1 "VCC" H 5515 2873 50  0000 C CNN
+F 2 "" H 5500 2700 50  0001 C CNN
+F 3 "" H 5500 2700 50  0001 C CNN
+	1    5500 2700
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7250 2400 4700 2400
+Wire Notes Line
+	4700 2400 4700 4750
+Wire Notes Line
+	4700 4750 7250 4750
+Wire Notes Line
+	7250 2400 7250 4750
+Text Notes 7200 2500 2    50   ~ 0
+Clock Generator Chip
+Text Notes 3100 3550 2    50   ~ 0
+Power Decoupling
+Wire Notes Line
+	3150 3450 3150 4250
+Wire Notes Line
+	3150 4250 2100 4250
+Wire Notes Line
+	2100 4250 2100 3450
+Wire Notes Line
+	2100 3450 3150 3450
+Wire Notes Line
+	1450 2450 1450 1350
+Wire Notes Line
+	1450 1350 3050 1350
+Wire Notes Line
+	3050 1350 3050 2450
+Wire Notes Line
+	3050 2450 1450 2450
+Text Notes 1500 1450 0    50   ~ 0
+Reset Button
 $EndSCHEMATC

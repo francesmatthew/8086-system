@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title "external-connectors"
 Date ""
 Rev ""
@@ -350,12 +350,170 @@ F 3 "~" H 4300 5050 50  0001 C CNN
 	1    4300 5050
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	6050 1950 8550 1950
-Wire Bus Line
-	1900 1950 4650 1950
 Text HLabel 4100 5050 0    50   Input ~ 0
 RESET
 Text HLabel 4600 4750 2    50   Output ~ 0
 ~BHE
+$Comp
+L power:GND #PWR?
+U 1 1 61D25BC8
+P 1700 5500
+F 0 "#PWR?" H 1700 5250 50  0001 C CNN
+F 1 "GND" H 1705 5327 50  0000 C CNN
+F 2 "" H 1700 5500 50  0001 C CNN
+F 3 "" H 1700 5500 50  0001 C CNN
+	1    1700 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61D25BCE
+P 2100 5200
+F 0 "#PWR?" H 2100 5050 50  0001 C CNN
+F 1 "VCC" H 2115 5373 50  0000 C CNN
+F 2 "" H 2100 5200 50  0001 C CNN
+F 3 "" H 2100 5200 50  0001 C CNN
+	1    2100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61D25BD4
+P 1850 5350
+F 0 "C?" H 1965 5396 50  0000 L CNN
+F 1 "100uF" H 1965 5305 50  0000 L CNN
+F 2 "" H 1888 5200 50  0001 C CNN
+F 3 "~" H 1850 5350 50  0001 C CNN
+	1    1850 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5200 1850 5200
+Wire Wire Line
+	2100 5200 1850 5200
+Connection ~ 1850 5200
+Wire Wire Line
+	1850 5500 1700 5500
+Wire Wire Line
+	1550 5400 1550 5500
+Wire Wire Line
+	1550 5500 1700 5500
+Connection ~ 1700 5500
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 61D2B6EC
+P 1250 6250
+AR Path="/61D2B6EC" Ref="J?"  Part="1" 
+AR Path="/626E3AF4/61D2B6EC" Ref="J?"  Part="1" 
+F 0 "J?" H 1307 6575 50  0000 C CNN
+F 1 "Barrel_Jack +12V" H 1307 6484 50  0000 C CNN
+F 2 "" H 1300 6210 50  0001 C CNN
+F 3 "~" H 1300 6210 50  0001 C CNN
+	1    1250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D2B6F2
+P 1700 6450
+F 0 "#PWR?" H 1700 6200 50  0001 C CNN
+F 1 "GND" H 1705 6277 50  0000 C CNN
+F 2 "" H 1700 6450 50  0001 C CNN
+F 3 "" H 1700 6450 50  0001 C CNN
+	1    1700 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61D2B6FE
+P 1850 6300
+F 0 "C?" H 1965 6346 50  0000 L CNN
+F 1 "100uF" H 1965 6255 50  0000 L CNN
+F 2 "" H 1888 6150 50  0001 C CNN
+F 3 "~" H 1850 6300 50  0001 C CNN
+	1    1850 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6150 1850 6150
+Wire Wire Line
+	2100 6150 1850 6150
+Connection ~ 1850 6150
+Wire Wire Line
+	1850 6450 1700 6450
+Wire Wire Line
+	1550 6350 1550 6450
+Wire Wire Line
+	1550 6450 1700 6450
+Connection ~ 1700 6450
+$Comp
+L power:+12V #PWR?
+U 1 1 61D30CC5
+P 2100 6150
+F 0 "#PWR?" H 2100 6000 50  0001 C CNN
+F 1 "+12V" H 2115 6323 50  0000 C CNN
+F 2 "" H 2100 6150 50  0001 C CNN
+F 3 "" H 2100 6150 50  0001 C CNN
+	1    2100 6150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2250 4800 2250 6700
+Wire Notes Line
+	950  4800 950  6700
+Wire Notes Line
+	5300 1850 1650 1850
+Wire Notes Line
+	1650 3650 5300 3650
+Wire Notes Line
+	5550 3800 8300 3800
+Wire Notes Line
+	8300 3800 8300 1850
+Wire Notes Line
+	5550 1850 8300 1850
+Wire Notes Line
+	5550 1850 5550 3800
+Text Notes 5600 3750 0    50   ~ 0
+Data Bus Headers
+Wire Notes Line
+	5300 3650 5300 1850
+Wire Notes Line
+	1650 1850 1650 3650
+Text Notes 5250 3600 2    50   ~ 0
+Address Bus Headers
+Text Notes 1000 4900 0    50   ~ 0
+Power Input
+Text Notes 1750 4950 0    50   ~ 0
+VCC is +5V
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 61D25BC2
+P 1250 5300
+AR Path="/61D25BC2" Ref="J?"  Part="1" 
+AR Path="/626E3AF4/61D25BC2" Ref="J?"  Part="1" 
+F 0 "J?" H 1307 5625 50  0000 C CNN
+F 1 "Barrel_Jack +5V" H 1307 5534 50  0000 C CNN
+F 2 "" H 1300 5260 50  0001 C CNN
+F 3 "~" H 1300 5260 50  0001 C CNN
+	1    1250 5300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	950  6700 2250 6700
+Wire Notes Line
+	950  4800 2250 4800
+Wire Notes Line
+	3700 4450 3700 5700
+Wire Notes Line
+	3700 5700 5000 5700
+Wire Notes Line
+	5000 5700 5000 4450
+Wire Notes Line
+	3700 4450 5000 4450
+Wire Bus Line
+	6050 1950 8100 1950
+Wire Bus Line
+	1900 1950 4650 1950
+Text Notes 4950 5650 2    50   ~ 0
+Control Signal Headers
 $EndSCHEMATC
