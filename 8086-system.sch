@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "8086-system"
 Date ""
 Rev ""
@@ -163,14 +163,14 @@ Wire Bus Line
 	3750 2200 3750 3100
 Connection ~ 3750 3100
 Wire Bus Line
-	3750 3100 8950 3100
+	3750 3100 6000 3100
 Wire Bus Line
 	3500 2100 3850 2100
 Wire Bus Line
 	3850 2100 3850 3200
 Connection ~ 3850 3200
 Wire Bus Line
-	3850 3200 8950 3200
+	3850 3200 5900 3200
 Text Label 2500 2300 2    50   ~ 0
 ~MRDC
 Text Label 2500 2300 2    50   ~ 0
@@ -181,4 +181,47 @@ Text Label 2500 2100 2    50   ~ 0
 M\~IO
 Text Label 2000 4050 0    50   ~ 0
 M\~IO
+$Sheet
+S 4850 2000 1000 650 
+U 61A42887
+F0 "UART-interface" 50
+F1 "UART-interface.sch" 50
+F2 "INTR" O R 5850 2100 50 
+F3 "~IORC" I L 4850 2550 50 
+F4 "~IOWC" I L 4850 2450 50 
+F5 "PCLK" I L 4850 2200 50 
+F6 "DATA_BUS" B R 5850 2500 50 
+F7 "RESET" I L 4850 2100 50 
+F8 "ADDRESS_BUS" I R 5850 2400 50 
+F9 "M\\~IO" I L 4850 2350 50 
+F10 "~BHE" I R 5850 2250 50 
+$EndSheet
+Text Label 5850 2250 0    50   ~ 0
+~BHE
+Text Label 5850 2100 0    50   ~ 0
+IR3
+Wire Bus Line
+	5850 2500 5900 2500
+Wire Bus Line
+	5900 2500 5900 3200
+Connection ~ 5900 3200
+Wire Bus Line
+	5900 3200 8950 3200
+Wire Bus Line
+	5850 2400 6000 2400
+Wire Bus Line
+	6000 2400 6000 3100
+Connection ~ 6000 3100
+Wire Bus Line
+	6000 3100 8950 3100
+Text Label 4850 2350 2    50   ~ 0
+M\~IO
+Text Label 4850 2450 2    50   ~ 0
+~IOWC
+Text Label 4850 2550 2    50   ~ 0
+~IORC
+Text Label 4850 2200 2    50   ~ 0
+PCLK
+Text Label 4850 2100 2    50   ~ 0
+RESET
 $EndSCHEMATC
