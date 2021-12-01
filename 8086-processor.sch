@@ -689,17 +689,6 @@ F 3 "" H 1150 7400 50  0001 C CNN
 	1    1150 7400
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xx:74LS00 U?
-U 1 1 62421B5C
-P 3600 6800
-F 0 "U?" V 3554 6988 50  0000 L CNN
-F 1 "74LS00" V 3645 6988 50  0000 L CNN
-F 2 "" H 3600 6800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3600 6800 50  0001 C CNN
-	1    3600 6800
-	0    1    1    0   
-$EndComp
 Text Label 2300 7000 0    50   ~ 0
 NMI
 Wire Wire Line
@@ -869,39 +858,6 @@ Wire Wire Line
 Connection ~ 10050 1200
 Wire Wire Line
 	10050 1200 9650 1200
-$Comp
-L 74xx:74LS00 U?
-U 2 1 61C66C20
-P 4250 6800
-F 0 "U?" V 4204 6988 50  0000 L CNN
-F 1 "74LS00" V 4295 6988 50  0000 L CNN
-F 2 "" H 4250 6800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4250 6800 50  0001 C CNN
-	2    4250 6800
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS00 U?
-U 3 1 61C681E6
-P 4900 6800
-F 0 "U?" V 4854 6988 50  0000 L CNN
-F 1 "74LS00" V 4945 6988 50  0000 L CNN
-F 2 "" H 4900 6800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4900 6800 50  0001 C CNN
-	3    4900 6800
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74LS00 U?
-U 4 1 61C6B709
-P 5550 6800
-F 0 "U?" V 5504 6988 50  0000 L CNN
-F 1 "74LS00" V 5595 6988 50  0000 L CNN
-F 2 "" H 5550 6800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5550 6800 50  0001 C CNN
-	4    5550 6800
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	8300 650  10800 650 
 Wire Notes Line
@@ -1000,17 +956,6 @@ F 1 "74LS14" H 10280 1955 50  0000 L CNN
 F 2 "" H 10050 2000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 10050 2000 50  0001 C CNN
 	7    10050 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U?
-U 5 1 626CCCC0
-P 9300 2000
-F 0 "U?" H 9530 2046 50  0000 L CNN
-F 1 "74LS00" H 9530 1955 50  0000 L CNN
-F 2 "" H 9300 2000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 9300 2000 50  0001 C CNN
-	5    9300 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1128,4 +1073,59 @@ Wire Bus Line
 	9350 3100 9350 5600
 Wire Bus Line
 	2500 550  5800 550 
+$Comp
+L 74xx:74LS32 U?
+U 1 1 61A73C26
+P 3600 6800
+F 0 "U?" V 3554 6988 50  0000 L CNN
+F 1 "74LS32" V 3645 6988 50  0000 L CNN
+F 2 "" H 3600 6800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3600 6800 50  0001 C CNN
+	1    3600 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS32 U?
+U 2 1 61A7F39D
+P 4250 6800
+F 0 "U?" V 4204 6988 50  0000 L CNN
+F 1 "74LS32" V 4295 6988 50  0000 L CNN
+F 2 "" H 4250 6800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4250 6800 50  0001 C CNN
+	2    4250 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS32 U?
+U 3 1 61A81C9F
+P 4900 6800
+F 0 "U?" V 4854 6988 50  0000 L CNN
+F 1 "74LS32" V 4945 6988 50  0000 L CNN
+F 2 "" H 4900 6800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4900 6800 50  0001 C CNN
+	3    4900 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS32 U?
+U 4 1 61A85A50
+P 5550 6800
+F 0 "U?" V 5504 6988 50  0000 L CNN
+F 1 "74LS32" V 5595 6988 50  0000 L CNN
+F 2 "" H 5550 6800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5550 6800 50  0001 C CNN
+	4    5550 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS32 U?
+U 5 1 61A94E61
+P 9300 2000
+F 0 "U?" H 9070 2046 50  0000 R CNN
+F 1 "74LS32" H 9070 1955 50  0000 R CNN
+F 2 "" H 9300 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9300 2000 50  0001 C CNN
+	5    9300 2000
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
