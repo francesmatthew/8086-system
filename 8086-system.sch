@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "8086-system"
 Date ""
 Rev ""
@@ -224,4 +224,18 @@ Text Label 4850 2200 2    50   ~ 0
 PCLK
 Text Label 4850 2100 2    50   ~ 0
 RESET
+$Sheet
+S 2800 3500 1250 650 
+U 61A6CC47
+F0 "8279-keyboard" 50
+F1 "8279-keyboard.sch" 50
+F2 "PCLK" I L 2800 3600 50 
+F3 "INTR" O R 4050 3600 50 
+F4 "RESET" I L 2800 3700 50 
+F5 "DATA_BUS" B R 4050 3950 50 
+F6 "ADDRESS_BUS" I R 4050 4050 50 
+F7 "~RD" I L 2800 3850 50 
+F8 "~WR" I L 2800 3950 50 
+F9 "~CS" I R 4050 3750 50 
+$EndSheet
 $EndSCHEMATC
