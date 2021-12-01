@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 10
 Title "external-connectors"
 Date ""
 Rev ""
@@ -510,10 +510,10 @@ Wire Notes Line
 	5000 5700 5000 4450
 Wire Notes Line
 	3700 4450 5000 4450
+Text Notes 4950 5650 2    50   ~ 0
+Control Signal Headers
 Wire Bus Line
 	6050 1950 8100 1950
 Wire Bus Line
 	1900 1950 4650 1950
-Text Notes 4950 5650 2    50   ~ 0
-Control Signal Headers
 $EndSCHEMATC
