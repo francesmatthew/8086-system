@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 10
+Sheet 4 11
 Title "CMOS-flash"
 Date ""
 Rev ""
@@ -91,13 +91,13 @@ F 3 "" H 6100 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 8300 1950 2    50   Input ~ 0
-~MWTC
+~WR
 Text HLabel 8300 4400 2    50   Input ~ 0
-~MWTC
+~WR
 Text HLabel 8300 5100 2    50   Input ~ 0
-~MRDC
+~RD
 Text HLabel 8300 2650 2    50   Input ~ 0
-~MRDC
+~RD
 NoConn ~ 8300 2050
 NoConn ~ 8300 4500
 $Comp

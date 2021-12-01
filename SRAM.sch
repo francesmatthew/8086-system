@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 10
+Sheet 7 11
 Title "SRAM"
 Date ""
 Rev ""
@@ -1017,6 +1017,12 @@ Wire Wire Line
 	2500 6900 2250 6900
 Text Notes 750  1125 0    100  ~ 0
 128kB SRAM\nAddresses 0x00000 to 0x1FFFF
+Text Notes 1450 1700 0    50   ~ 0
+Address decoding/chip select
+Text Notes 2150 6175 0    50   ~ 0
+Power decoupling
+Text Notes 6700 3400 0    50   ~ 0
+SRAM memory chips
 Wire Bus Line
 	1250 2000 1250 4825
 Wire Bus Line
@@ -1035,10 +1041,4 @@ Wire Bus Line
 	5325 3875 5325 5425
 Wire Bus Line
 	8025 3850 8025 5400
-Text Notes 1450 1700 0    50   ~ 0
-Address decoding/chip select
-Text Notes 2150 6175 0    50   ~ 0
-Power decoupling
-Text Notes 6700 3400 0    50   ~ 0
-SRAM memory chips
 $EndSCHEMATC
