@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 10
 Title "CMOS-flash"
 Date ""
 Rev ""
@@ -758,6 +758,8 @@ Wire Notes Line
 	5000 6100 9450 6100
 Wire Notes Line
 	9450 1350 9450 6100
+Text Notes 9400 1450 2    50   ~ 0
+Flash Memory Chips
 Wire Bus Line
 	5850 3150 5850 3450
 Wire Bus Line
@@ -776,6 +778,4 @@ Wire Bus Line
 	5650 4200 5650 5300
 Wire Bus Line
 	5650 1750 5650 2850
-Text Notes 9400 1450 2    50   ~ 0
-Flash Memory Chips
 $EndSCHEMATC
