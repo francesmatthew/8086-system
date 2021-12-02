@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
+Sheet 1 13
 Title "8086-system"
 Date ""
 Rev ""
@@ -397,11 +397,11 @@ Text Label 7000 3900 2    50   ~ 0
 ~RD
 Text Label 7000 4000 2    50   ~ 0
 ~WR
-Text Label 7000 4900 2    50   ~ 0
+Text Label 7000 4875 2    50   ~ 0
 ~WR
 Text Label 7000 4750 2    50   ~ 0
 ~RD
-Text Label 7000 5650 2    50   ~ 0
+Text Label 7000 5625 2    50   ~ 0
 ~RD
 Text Label 7000 5750 2    50   ~ 0
 ~WR
