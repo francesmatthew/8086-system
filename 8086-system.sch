@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 14
 Title "8086-system"
 Date ""
 Rev ""
@@ -14,52 +14,22 @@ Comment3 ""
 Comment4 "Designers: Brian Cruz, Matthew Frances"
 $EndDescr
 $Sheet
-S 1150 3050 850  1750
-U 6190420C
-F0 "8086-processor" 50
-F1 "8086-processor.sch" 50
-F2 "CLK" I L 1150 3200 50 
-F3 "ADDRESS_BUS" O R 2000 3100 50 
-F4 "~BHE" O R 2000 3350 50 
-F5 "INTR" I L 1150 4100 50 
-F6 "RESET" I L 1150 3400 50 
-F7 "READY" I L 1150 3300 50 
-F8 "~TEST" I L 1150 3600 50 
-F9 "HOLD" I L 1150 3700 50 
-F10 "HLDA" O L 1150 3800 50 
-F11 "~INTA" O L 1150 4200 50 
-F12 "~MRDC" O R 2000 3550 50 
-F13 "~MWTC" O R 2000 3650 50 
-F14 "~IORC" O R 2000 3800 50 
-F15 "~IOWC" O R 2000 3900 50 
-F16 "DATA_BUS" B R 2000 3200 50 
-F17 "M\\~IO" O R 2000 4050 50 
-$EndSheet
-$Sheet
 S 8950 3000 950  900 
 U 626E3AF4
 F0 "external-connectors" 50
 F1 "external-connectors.sch" 50
-F2 "CLK" I L 8950 3500 50 
-F3 "~BHE" I L 8950 3300 50 
-F4 "~MRDC" I R 9900 3250 50 
-F5 "~MWTC" I R 9900 3350 50 
-F6 "~IORC" I R 9900 3450 50 
-F7 "~IOWC" I R 9900 3550 50 
-F8 "DATA_BUS" B L 8950 3200 50 
-F9 "RESET" I L 8950 3600 50 
-F10 "ADDRESS_BUS" I L 8950 3100 50 
+F2 "~BHE" I L 8950 3300 50 
+F3 "DATA_BUS" B L 8950 3200 50 
+F4 "ADDRESS_BUS" I L 8950 3100 50 
+F5 "CLK" I L 8950 3500 50 
+F6 "PCLK" I L 8950 3700 50 
+F7 "RESET" I L 8950 3600 50 
+F8 "M\\~IO" I R 9900 3100 50 
+F9 "~WR" I R 9900 3300 50 
+F10 "~RD" I R 9900 3200 50 
 $EndSheet
 Text Label 2000 3350 0    50   ~ 0
 ~BHE
-Text Label 2000 3550 0    50   ~ 0
-~MRDC
-Text Label 2000 3650 0    50   ~ 0
-~MWTC
-Text Label 2000 3800 0    50   ~ 0
-~IORC
-Text Label 2000 3900 0    50   ~ 0
-~IOWC
 Text Label 1150 3200 2    50   ~ 0
 CLK
 Text Label 1150 3300 2    50   ~ 0
@@ -78,16 +48,6 @@ Text Label 8950 3500 2    50   ~ 0
 CLK
 Text Label 8950 3300 2    50   ~ 0
 ~BHE
-Text Label 9900 3250 0    50   ~ 0
-~MRDC
-Text Label 9900 3350 0    50   ~ 0
-~MWTC
-Text Label 9900 3450 0    50   ~ 0
-~IORC
-Text Label 9900 3550 0    50   ~ 0
-~IOWC
-Wire Bus Line
-	2000 3100 3750 3100
 Wire Bus Line
 	2000 3200 3850 3200
 $Sheet
@@ -148,12 +108,12 @@ S 2500 2000 1000 450
 U 61A2E343
 F0 "CMOS-flash" 50
 F1 "CMOS-flash.sch" 50
-F2 "~MRDC" I L 2500 2300 50 
-F3 "DATA_BUS" B R 3500 2100 50 
-F4 "ADDRESS_BUS" I R 3500 2200 50 
-F5 "M\\~IO" I L 2500 2100 50 
-F6 "~BHE" I R 3500 2300 50 
-F7 "~MWTC" I L 2500 2200 50 
+F2 "DATA_BUS" B R 3500 2100 50 
+F3 "ADDRESS_BUS" I R 3500 2200 50 
+F4 "M\\~IO" I L 2500 2100 50 
+F5 "~BHE" I R 3500 2300 50 
+F6 "~WR" I L 2500 2350 50 
+F7 "~RD" I L 2500 2250 50 
 $EndSheet
 Text Label 3500 2300 0    50   ~ 0
 ~BHE
@@ -161,18 +121,11 @@ Wire Bus Line
 	3500 2200 3750 2200
 Wire Bus Line
 	3750 2200 3750 3100
-Connection ~ 3750 3100
 Wire Bus Line
 	3500 2100 3850 2100
 Wire Bus Line
 	3850 2100 3850 3200
 Connection ~ 3850 3200
-Text Label 2500 2300 2    50   ~ 0
-~MRDC
-Text Label 2500 2300 2    50   ~ 0
-~MRDC
-Text Label 2500 2200 2    50   ~ 0
-~MWTC
 Text Label 2500 2100 2    50   ~ 0
 M\~IO
 Text Label 2000 4050 0    50   ~ 0
@@ -183,14 +136,14 @@ U 61A42887
 F0 "UART-interface" 50
 F1 "UART-interface.sch" 50
 F2 "INTR" O R 7700 2100 50 
-F3 "~IORC" I L 6700 2550 50 
-F4 "~IOWC" I L 6700 2450 50 
-F5 "PCLK" I L 6700 2200 50 
-F6 "DATA_BUS" B R 7700 2500 50 
-F7 "RESET" I L 6700 2100 50 
-F8 "ADDRESS_BUS" I R 7700 2400 50 
-F9 "M\\~IO" I L 6700 2350 50 
-F10 "~BHE" I R 7700 2250 50 
+F3 "PCLK" I L 6700 2200 50 
+F4 "DATA_BUS" B R 7700 2500 50 
+F5 "RESET" I L 6700 2100 50 
+F6 "ADDRESS_BUS" I R 7700 2400 50 
+F7 "~BHE" I R 7700 2250 50 
+F8 "~RD" I L 6700 2450 50 
+F9 "~WR" I L 6700 2550 50 
+F10 "~CS" I L 6700 2350 50 
 $EndSheet
 Text Label 7700 2250 0    50   ~ 0
 ~BHE
@@ -204,12 +157,6 @@ Wire Bus Line
 	7700 2400 7850 2400
 Wire Bus Line
 	7850 2400 7850 3100
-Text Label 6700 2350 2    50   ~ 0
-M\~IO
-Text Label 6700 2450 2    50   ~ 0
-~IOWC
-Text Label 6700 2550 2    50   ~ 0
-~IORC
 Text Label 6700 2200 2    50   ~ 0
 PCLK
 Text Label 6700 2100 2    50   ~ 0
@@ -225,7 +172,7 @@ F2 "ADDRESS_BUS" I R 5450 2225 50
 F3 "M\\~IO" I L 4450 2100 50 
 F4 "~BHE" I R 5450 2350 50 
 F5 "~RD" I L 4450 2350 50 
-F6 "~WR" I L 4450 2225 50 
+F6 "~WR" I L 4450 2250 50 
 F7 "DATA_BUS" B R 5450 2100 50 
 $EndSheet
 Wire Bus Line
@@ -309,7 +256,7 @@ F0 "PPI1" 50
 F1 "peripheral-interface-odd.sch" 50
 F2 "RESET" I L 7000 3625 50 
 F3 "~CS" I L 7000 3750 50 
-F4 "~RD" I L 7000 3875 50 
+F4 "~RD" I L 7000 3900 50 
 F5 "~WR" I L 7000 4000 50 
 F6 "DATA_BUS" B R 8000 3750 50 
 F7 "ADDRESS_BUS" I R 8000 3625 50 
@@ -320,7 +267,7 @@ U 61C417C6
 F0 "PPI2" 50
 F1 "peripheral-interface-even.sch" 50
 F2 "RESET" I L 7000 4500 50 
-F3 "~CS" I L 7000 4625 50 
+F3 "~CS" I L 7000 4600 50 
 F4 "~RD" I L 7000 4750 50 
 F5 "~WR" I L 7000 4875 50 
 F6 "DATA_BUS" B R 8000 4625 50 
@@ -414,10 +361,77 @@ Connection ~ 4850 3100
 Wire Bus Line
 	4850 3100 5650 3100
 Connection ~ 4975 3200
+$Sheet
+S 1150 3050 850  1750
+U 6190420C
+F0 "8086-processor" 50
+F1 "8086-processor.sch" 50
+F2 "CLK" I L 1150 3200 50 
+F3 "ADDRESS_BUS" O R 2000 3100 50 
+F4 "~BHE" O R 2000 3350 50 
+F5 "INTR" I L 1150 4100 50 
+F6 "RESET" I L 1150 3400 50 
+F7 "READY" I L 1150 3300 50 
+F8 "~TEST" I L 1150 3600 50 
+F9 "HOLD" I L 1150 3700 50 
+F10 "HLDA" O L 1150 3800 50 
+F11 "~INTA" O L 1150 4200 50 
+F12 "DATA_BUS" B R 2000 3200 50 
+F13 "M\\~IO" O R 2000 4050 50 
+F14 "~WR" O R 2000 3850 50 
+F15 "~RD" O R 2000 3750 50 
+$EndSheet
+Text Label 2000 3750 0    50   ~ 0
+~RD
+Text Label 2000 3850 0    50   ~ 0
+~WR
+Text Label 2500 2250 2    50   ~ 0
+~RD
+Text Label 2500 2350 2    50   ~ 0
+~WR
+Text Label 6700 2450 2    50   ~ 0
+~RD
+Text Label 6700 2550 2    50   ~ 0
+~WR
+Text Label 7000 3900 2    50   ~ 0
+~RD
+Text Label 7000 4000 2    50   ~ 0
+~WR
+Text Label 7000 4900 2    50   ~ 0
+~WR
+Text Label 7000 4750 2    50   ~ 0
+~RD
+Text Label 7000 5650 2    50   ~ 0
+~RD
+Text Label 7000 5750 2    50   ~ 0
+~WR
+Text Label 2875 3850 2    50   ~ 0
+~RD
+Text Label 2875 3950 2    50   ~ 0
+~WR
+Text Label 2875 3600 2    50   ~ 0
+PCLK
+Text Label 2875 3700 2    50   ~ 0
+RESET
+Text Label 4450 2350 2    50   ~ 0
+~RD
+Text Label 4450 2250 2    50   ~ 0
+~WR
+Text Label 8950 3700 2    50   ~ 0
+PCLK
+Text Label 9900 3200 0    50   ~ 0
+~RD
+Text Label 9900 3300 0    50   ~ 0
+~WR
+Text Label 9900 3100 0    50   ~ 0
+M\~IO
 Wire Bus Line
 	4975 3200 5750 3200
 Wire Bus Line
-	3750 3100 4850 3100
-Wire Bus Line
 	3850 3200 4975 3200
+Wire Bus Line
+	2000 3100 3750 3100
+Connection ~ 3750 3100
+Wire Bus Line
+	3750 3100 4850 3100
 $EndSCHEMATC
