@@ -397,11 +397,7 @@ Text Label 7000 3900 2    50   ~ 0
 ~RD
 Text Label 7000 4000 2    50   ~ 0
 ~WR
-Text Label 7000 4875 2    50   ~ 0
-~WR
 Text Label 7000 4750 2    50   ~ 0
-~RD
-Text Label 7000 5625 2    50   ~ 0
 ~RD
 Text Label 7000 5750 2    50   ~ 0
 ~WR
@@ -434,4 +430,8 @@ Wire Bus Line
 Connection ~ 3750 3100
 Wire Bus Line
 	3750 3100 4850 3100
+Text Label 7000 4875 2    50   ~ 0
+~WR
+Text Label 7000 5625 2    50   ~ 0
+~RD
 $EndSCHEMATC

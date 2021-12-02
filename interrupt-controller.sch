@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 13
+Sheet 10 13
 Title "Interrupt Controller"
 Date ""
 Rev ""
@@ -219,38 +219,111 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 61D074FC
-P 7500 2500
-F 0 "R?" H 7570 2546 50  0000 L CNN
-F 1 "2.2k" H 7570 2455 50  0000 L CNN
-F 2 "" V 7430 2500 50  0001 C CNN
-F 3 "~" H 7500 2500 50  0001 C CNN
-	1    7500 2500
+P 7500 2100
+F 0 "R?" H 7570 2146 50  0000 L CNN
+F 1 "27k" H 7570 2055 50  0000 L CNN
+F 2 "" V 7430 2100 50  0001 C CNN
+F 3 "~" H 7500 2100 50  0001 C CNN
+	1    7500 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 2650 7500 2750
+	7500 2250 7500 2375
 Wire Wire Line
 	7500 2750 7325 2750
 Wire Wire Line
-	7500 2350 7500 2250
+	7500 1950 7500 1900
 $Comp
 L power:VCC #PWR?
 U 1 1 61D08458
-P 7500 2250
-F 0 "#PWR?" H 7500 2100 50  0001 C CNN
-F 1 "VCC" H 7515 2423 50  0000 C CNN
-F 2 "" H 7500 2250 50  0001 C CNN
-F 3 "" H 7500 2250 50  0001 C CNN
-	1    7500 2250
+P 7500 1900
+F 0 "#PWR?" H 7500 1750 50  0001 C CNN
+F 1 "VCC" H 7515 2073 50  0000 C CNN
+F 2 "" H 7500 1900 50  0001 C CNN
+F 3 "" H 7500 1900 50  0001 C CNN
+	1    7500 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 2750 7900 2750
+	7500 2750 7775 2750
+Connection ~ 7500 2750
+Text Notes 7325 1575 0    50   ~ 0
+Push button pull-up and debounce
+$Comp
+L Device:R R?
+U 1 1 61D34260
+P 7925 2750
+F 0 "R?" V 7718 2750 50  0000 C CNN
+F 1 "24k" V 7809 2750 50  0000 C CNN
+F 2 "" V 7855 2750 50  0001 C CNN
+F 3 "~" H 7925 2750 50  0001 C CNN
+	1    7925 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 61D371F9
+P 7925 2375
+F 0 "D?" H 7925 2158 50  0000 C CNN
+F 1 "1N4148" H 7925 2249 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7925 2200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7925 2375 50  0001 C CNN
+	1    7925 2375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7775 2375 7500 2375
+Connection ~ 7500 2375
+Wire Wire Line
+	7500 2375 7500 2750
+Wire Wire Line
+	8075 2750 8250 2750
+Wire Wire Line
+	8075 2375 8250 2375
+Wire Wire Line
+	8250 2375 8250 2750
+Connection ~ 8250 2750
+Wire Wire Line
+	8250 2750 8250 2875
+$Comp
+L Device:CP1 C?
+U 1 1 61D3CF7E
+P 8250 3025
+F 0 "C?" H 8365 3071 50  0000 L CNN
+F 1 "2.2uF" H 8365 2980 50  0000 L CNN
+F 2 "" H 8250 3025 50  0001 C CNN
+F 3 "~" H 8250 3025 50  0001 C CNN
+	1    8250 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3175 8250 3250
+$Comp
+L power:GND #PWR?
+U 1 1 61D3DA48
+P 8250 3250
+F 0 "#PWR?" H 8250 3000 50  0001 C CNN
+F 1 "GND" H 8255 3077 50  0000 C CNN
+F 2 "" H 8250 3250 50  0001 C CNN
+F 3 "" H 8250 3250 50  0001 C CNN
+	1    8250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U?
+U 1 1 61D413EB
+P 8675 2750
+F 0 "U?" H 8675 3067 50  0000 C CNN
+F 1 "74HC14" H 8675 2976 50  0000 C CNN
+F 2 "" H 8675 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 8675 2750 50  0001 C CNN
+	1    8675 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8375 2750 8250 2750
 Wire Bus Line
 	2975 2750 2975 3550
-Connection ~ 7500 2750
-Text Label 7900 2750 0    50   ~ 0
+Text Label 8975 2750 0    50   ~ 0
 PUSH_BUTTON
-Text Notes 7050 1925 0    50   ~ 0
-Push button pull-up
 $EndSCHEMATC
