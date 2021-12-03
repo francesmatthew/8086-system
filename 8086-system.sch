@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 14
 Title "8086-system"
 Date ""
 Rev ""
@@ -48,8 +48,6 @@ Text Label 8950 3500 2    50   ~ 0
 CLK
 Text Label 8950 3300 2    50   ~ 0
 ~BHE
-Wire Bus Line
-	2000 3100 3750 3100
 Wire Bus Line
 	2000 3200 3850 3200
 $Sheet
@@ -123,7 +121,6 @@ Wire Bus Line
 	3500 2200 3750 2200
 Wire Bus Line
 	3750 2200 3750 3100
-Connection ~ 3750 3100
 Wire Bus Line
 	3500 2100 3850 2100
 Wire Bus Line
@@ -151,7 +148,7 @@ $EndSheet
 Text Label 7700 2250 0    50   ~ 0
 ~BHE
 Text Label 7700 2100 0    50   ~ 0
-IR3
+UART_INTR
 Wire Bus Line
 	7700 2500 7750 2500
 Wire Bus Line
@@ -164,26 +161,8 @@ Text Label 6700 2200 2    50   ~ 0
 PCLK
 Text Label 6700 2100 2    50   ~ 0
 RESET
-$Sheet
-S 2800 3500 1250 650 
-U 61A6CC47
-F0 "8279-keyboard" 50
-F1 "8279-keyboard.sch" 50
-F2 "PCLK" I L 2800 3600 50 
-F3 "INTR" O R 4050 3900 50 
-F4 "RESET" I L 2800 3700 50 
-F5 "DATA_BUS" B R 4050 3600 50 
-F6 "ADDRESS_BUS" I R 4050 3700 50 
-F7 "~RD" I L 2800 3850 50 
-F8 "~WR" I L 2800 3950 50 
-F9 "~CS" I R 4050 4000 50 
-$EndSheet
 Connection ~ 7750 3200
-Wire Bus Line
-	7750 3200 8250 3200
 Connection ~ 7850 3100
-Wire Bus Line
-	7850 3100 8125 3100
 $Sheet
 S 4450 2000 1000 450 
 U 61AAD0E1
@@ -209,18 +188,72 @@ M\~IO
 Wire Bus Line
 	5650 2225 5650 3100
 Connection ~ 5650 3100
-Wire Bus Line
-	5650 3100 7850 3100
 Connection ~ 5750 3200
+Connection ~ 8250 3200
+Connection ~ 8125 3100
 Wire Bus Line
-	5750 3200 7750 3200
+	8125 3100 8950 3100
 Wire Bus Line
-	3750 3100 4250 3100
+	7850 3100 8125 3100
+Wire Bus Line
+	8250 3200 8950 3200
+Wire Bus Line
+	7750 3200 8250 3200
+Wire Bus Line
+	5750 3200 6375 3200
+Wire Bus Line
+	5650 3100 6250 3100
+Connection ~ 8250 3750
+Wire Bus Line
+	8250 3750 8250 3200
+Text Label 7000 5375 2    50   ~ 0
+RESET
+Text Label 7000 4500 2    50   ~ 0
+RESET
+Text Label 7000 3625 2    50   ~ 0
+RESET
+Connection ~ 8250 4625
+Wire Bus Line
+	8250 5500 8250 4625
+Wire Bus Line
+	8000 5500 8250 5500
+Connection ~ 8125 4500
+Wire Bus Line
+	8125 5375 8125 4500
+Wire Bus Line
+	8000 5375 8125 5375
+Wire Bus Line
+	8250 3750 8250 4625
+Wire Bus Line
+	8000 4625 8250 4625
+Wire Bus Line
+	8125 3625 8125 4500
+Connection ~ 8125 3625
+Wire Bus Line
+	8125 3100 8125 3625
+Wire Bus Line
+	8000 4500 8125 4500
+Wire Bus Line
+	8000 3750 8250 3750
+Wire Bus Line
+	8000 3625 8125 3625
+$Sheet
+S 7000 5250 1000 625 
+U 61C41B68
+F0 "PPI3" 50
+F1 "peripheral-interface-odd.sch" 50
+F2 "RESET" I L 7000 5375 50 
+F3 "~CS" I L 7000 5500 50 
+F4 "~RD" I L 7000 5625 50 
+F5 "~WR" I L 7000 5750 50 
+F6 "DATA_BUS" B R 8000 5500 50 
+F7 "ADDRESS_BUS" I R 8000 5375 50 
+$EndSheet
 $Sheet
 S 7000 3500 1000 625 
 U 61C40B21
 F0 "PPI1" 50
-F1 "peripheral-interface.sch" 50
+F1 "peripheral-interface-odd.sch" 50
 F2 "RESET" I L 7000 3625 50 
 F3 "~CS" I L 7000 3750 50 
 F4 "~RD" I L 7000 3900 50 
@@ -232,66 +265,98 @@ $Sheet
 S 7000 4375 1000 625 
 U 61C417C6
 F0 "PPI2" 50
-F1 "peripheral-interface.sch" 50
+F1 "peripheral-interface-even.sch" 50
 F2 "RESET" I L 7000 4500 50 
 F3 "~CS" I L 7000 4600 50 
 F4 "~RD" I L 7000 4750 50 
-F5 "~WR" I L 7000 4900 50 
+F5 "~WR" I L 7000 4875 50 
 F6 "DATA_BUS" B R 8000 4625 50 
 F7 "ADDRESS_BUS" I R 8000 4500 50 
 $EndSheet
 $Sheet
-S 7000 5250 1000 625 
-U 61C41B68
-F0 "PPI3" 50
-F1 "peripheral-interface.sch" 50
-F2 "RESET" I L 7000 5375 50 
-F3 "~CS" I L 7000 5500 50 
-F4 "~RD" I L 7000 5650 50 
-F5 "~WR" I L 7000 5750 50 
-F6 "DATA_BUS" B R 8000 5500 50 
-F7 "ADDRESS_BUS" I R 8000 5375 50 
+S 4525 4500 1000 875 
+U 61CB92C1
+F0 "interrupt-controller" 50
+F1 "interrupt-controller.sch" 50
+F2 "IR1" I R 5525 5000 50 
+F3 "IR2" I R 5525 5125 50 
+F4 "IR3" I R 5525 5250 50 
+F5 "DATA_BUS" B R 5525 4750 50 
+F6 "~CS" I L 4525 5250 50 
+F7 "~WR" I L 4525 5125 50 
+F8 "~RD" I L 4525 5000 50 
+F9 "INT" O L 4525 4750 50 
+F10 "~INTA" I L 4525 4625 50 
+F11 "ADDRESS_BUS" I R 5525 4625 50 
+$EndSheet
+Text Label 5525 3600 0    50   ~ 0
+KEYBOARD_INTR
+Text Label 5525 5125 0    50   ~ 0
+KEYBOARD_INTR
+Text Label 5525 5250 0    50   ~ 0
+UART_INTR
+Text Label 4525 4750 2    50   ~ 0
+INTR
+Text Label 4525 4625 2    50   ~ 0
+~INTA
+$Sheet
+S 4275 3500 1250 650 
+U 61A6CC47
+F0 "8279-keyboard" 50
+F1 "8279-keyboard.sch" 50
+F2 "PCLK" I L 4275 3600 50 
+F3 "INTR" O R 5525 3600 50 
+F4 "RESET" I L 4275 3700 50 
+F5 "DATA_BUS" B R 5525 3950 50 
+F6 "ADDRESS_BUS" I R 5525 4050 50 
+F7 "~RD" I L 4275 3850 50 
+F8 "~WR" I L 4275 3950 50 
+F9 "~CS" I R 5525 3750 50 
 $EndSheet
 Wire Bus Line
-	8000 3625 8125 3625
-Connection ~ 8125 3100
+	5525 4750 6375 4750
 Wire Bus Line
-	8000 3750 8250 3750
+	6375 4750 6375 3950
 Wire Bus Line
-	8000 4500 8125 4500
+	5525 4625 6250 4625
 Wire Bus Line
-	8125 3100 8125 3625
-Connection ~ 8125 3625
+	6250 4625 6250 4050
 Wire Bus Line
-	8125 3625 8125 4500
+	5525 4050 6250 4050
 Wire Bus Line
-	8000 4625 8250 4625
+	6250 4050 6250 3100
 Wire Bus Line
-	8250 3750 8250 4625
+	5525 3950 6375 3950
 Wire Bus Line
-	8000 5375 8125 5375
+	6375 3950 6375 3200
+Connection ~ 6250 4050
+Connection ~ 6375 3950
+$Sheet
+S 4525 5750 1000 500 
+U 61CE1512
+F0 "counter" 50
+F1 "counter.sch" 50
+F2 "DATA_BUS" B R 5525 6000 50 
+F3 "~RD" I L 4525 5875 50 
+F4 "~WR" I L 4525 6000 50 
+F5 "ADDRESS_BUS" I R 5525 5875 50 
+F6 "~CS" I L 4525 6125 50 
+F7 "CLK1_OUT" O R 5525 6125 50 
+$EndSheet
+Text Label 5525 6125 0    50   ~ 0
+COUNTER_INTR
+Text Label 5525 5000 0    50   ~ 0
+COUNTER_INTR
 Wire Bus Line
-	8125 5375 8125 4500
-Connection ~ 8125 4500
+	5525 5875 6250 5875
 Wire Bus Line
-	8000 5500 8250 5500
+	6250 5875 6250 4625
+Connection ~ 6250 4625
 Wire Bus Line
-	8250 5500 8250 4625
-Connection ~ 8250 4625
-Text Label 7000 3625 2    50   ~ 0
-RESET
-Text Label 7000 4500 2    50   ~ 0
-RESET
-Text Label 7000 5375 2    50   ~ 0
-RESET
+	5525 6000 6375 6000
 Wire Bus Line
-	8125 3100 8950 3100
-Wire Bus Line
-	8250 3750 8250 3200
-Connection ~ 8250 3750
-Connection ~ 8250 3200
-Wire Bus Line
-	8250 3200 8950 3200
+	6375 6000 6375 4750
+Connection ~ 6375 4750
 $Sheet
 S 1150 3050 850  1750
 U 6190420C
@@ -328,21 +393,17 @@ Text Label 7000 3900 2    50   ~ 0
 ~RD
 Text Label 7000 4000 2    50   ~ 0
 ~WR
-Text Label 7000 4900 2    50   ~ 0
-~WR
 Text Label 7000 4750 2    50   ~ 0
-~RD
-Text Label 7000 5650 2    50   ~ 0
 ~RD
 Text Label 7000 5750 2    50   ~ 0
 ~WR
-Text Label 2800 3850 2    50   ~ 0
+Text Label 4275 3850 2    50   ~ 0
 ~RD
-Text Label 2800 3950 2    50   ~ 0
+Text Label 4275 3950 2    50   ~ 0
 ~WR
-Text Label 2800 3600 2    50   ~ 0
+Text Label 4275 3600 2    50   ~ 0
 PCLK
-Text Label 2800 3700 2    50   ~ 0
+Text Label 4275 3700 2    50   ~ 0
 RESET
 Text Label 4450 2350 2    50   ~ 0
 ~RD
