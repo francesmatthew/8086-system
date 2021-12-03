@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 13
+Sheet 12 14
 Title ""
 Date ""
 Rev ""
@@ -134,10 +134,6 @@ Wire Wire Line
 NoConn ~ 6150 3825
 Text HLabel 5600 3825 2    50   Output ~ 0
 CLK1_OUT
-Wire Bus Line
-	3975 3900 3975 4125
-Wire Bus Line
-	4100 2800 4100 3625
 $Comp
 L power:VCC #PWR?
 U 1 1 61CEF955
@@ -197,4 +193,8 @@ Text Notes 4675 2425 0    50   ~ 0
 8254 Interval Timer
 Text Notes 7950 3200 0    50   ~ 0
 Power decoupling
+Wire Bus Line
+	3975 3900 3975 4125
+Wire Bus Line
+	4100 2800 4100 3625
 $EndSCHEMATC
