@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 12
 Title "8086-system"
 Date ""
 Rev ""
@@ -367,11 +367,50 @@ Wire Bus Line
 	4150 3200 5750 3200
 Wire Bus Line
 	4050 3700 4250 3700
-Wire Bus Line
-	4250 3700 4250 3100
 Connection ~ 4250 3100
 Wire Bus Line
 	4250 3100 5650 3100
 Text Label 4050 3900 0    50   ~ 0
 IR2
+$Sheet
+S 2800 4700 1250 1600
+U 61CCC9EF
+F0 "human-interfaces" 50
+F1 "human-interfaces.sch" 50
+F2 "DATA_BUS" B R 4050 4800 50 
+F3 "ADDRESS_BUS" I R 4050 4900 50 
+F4 "~LED_CS" I R 4050 5100 50 
+F5 "~LCD_CS" I R 4050 5250 50 
+F6 "~DIP_CS" I R 4050 5400 50 
+F7 "~EVEN_7_SEG_CS" I R 4050 5550 50 
+F8 "~WR" I L 2800 5000 50 
+F9 "~ODD_7_SEG_CS" I R 4050 5700 50 
+F10 "~RD" I L 2800 4850 50 
+$EndSheet
+Text Label 2800 4850 2    50   ~ 0
+~RD
+Text Label 2800 5000 2    50   ~ 0
+~WR
+Wire Bus Line
+	4050 4800 4150 4800
+Wire Bus Line
+	4150 4800 4150 3600
+Connection ~ 4150 3600
+Wire Bus Line
+	4050 4900 4250 4900
+Wire Bus Line
+	4250 3100 4250 3700
+Connection ~ 4250 3700
+Wire Bus Line
+	4250 3700 4250 4900
+Text Label 4050 5100 0    50   ~ 0
+~LED_CS
+Text Label 4050 5250 0    50   ~ 0
+~LCD_CS
+Text Label 4050 5400 0    50   ~ 0
+~DIP_CS
+Text Label 4050 5550 0    50   ~ 0
+~EVEN_7_SEG_CS
+Text Label 4050 5700 0    50   ~ 0
+~ODD_7_SEG_CS
 $EndSCHEMATC
