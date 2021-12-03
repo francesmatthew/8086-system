@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 14
+Sheet 11 15
 Title "Peripheral Interface"
 Date ""
 Rev ""
@@ -32,14 +32,14 @@ F 3 "~" H 5900 4475 50  0001 C CNN
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J?
-U 1 1 61C3EA07
+U 1 1 61ABA7C2
 P 5900 3575
-AR Path="/61BFC8AC/61C0115A/61C3EA07" Ref="J?"  Part="1" 
-AR Path="/61BFC8AC/61C2038B/61C3EA07" Ref="J?"  Part="1" 
-AR Path="/61BFC8AC/61C20895/61C3EA07" Ref="J?"  Part="1" 
-AR Path="/61C40B21/61C3EA07" Ref="J?"  Part="1" 
-AR Path="/61C417C6/61C3EA07" Ref="J?"  Part="1" 
-AR Path="/61C41B68/61C3EA07" Ref="J?"  Part="1" 
+AR Path="/61BFC8AC/61C0115A/61ABA7C2" Ref="J?"  Part="1" 
+AR Path="/61BFC8AC/61C2038B/61ABA7C2" Ref="J?"  Part="1" 
+AR Path="/61BFC8AC/61C20895/61ABA7C2" Ref="J?"  Part="1" 
+AR Path="/61C40B21/61ABA7C2" Ref="J?"  Part="1" 
+AR Path="/61C417C6/61ABA7C2" Ref="J?"  Part="1" 
+AR Path="/61C41B68/61ABA7C2" Ref="J?"  Part="1" 
 F 0 "J?" H 5980 3567 50  0000 L CNN
 F 1 "Conn_01x08" H 5980 3476 50  0000 L CNN
 F 2 "" H 5900 3575 50  0001 C CNN
@@ -222,11 +222,11 @@ F 3 "" H 7875 3225 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 61C61024
+U 1 1 61ABA7C6
 P 7875 3525
-AR Path="/61C417C6/61C61024" Ref="#PWR?"  Part="1" 
-AR Path="/61C41B68/61C61024" Ref="#PWR?"  Part="1" 
-AR Path="/61C40B21/61C61024" Ref="#PWR?"  Part="1" 
+AR Path="/61C417C6/61ABA7C6" Ref="#PWR?"  Part="1" 
+AR Path="/61C41B68/61ABA7C6" Ref="#PWR?"  Part="1" 
+AR Path="/61C40B21/61ABA7C6" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7875 3275 50  0001 C CNN
 F 1 "GND" H 7880 3352 50  0000 C CNN
 F 2 "" H 7875 3525 50  0001 C CNN
