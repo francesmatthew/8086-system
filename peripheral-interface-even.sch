@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 15
+Sheet 8 15
 Title "Peripheral Interface"
 Date ""
 Rev ""
@@ -71,9 +71,9 @@ Entry Wire Line
 Entry Wire Line
 	4050 3075 4150 3175
 Text Label 4150 3275 0    50   ~ 0
-A1
-Text Label 4150 3175 0    50   ~ 0
 A2
+Text Label 4150 3175 0    50   ~ 0
+A1
 Wire Wire Line
 	4300 3175 4150 3175
 Wire Wire Line

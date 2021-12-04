@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 15
+Sheet 12 15
 Title "8086-processor"
 Date ""
 Rev ""
@@ -461,9 +461,6 @@ Wire Wire Line
 Connection ~ 6900 1800
 Text Label 6500 1800 3    50   ~ 0
 ALE
-NoConn ~ 6100 1800
-NoConn ~ 6200 1800
-NoConn ~ 6300 1800
 NoConn ~ 6300 800 
 NoConn ~ 6200 800 
 NoConn ~ 6100 800 
@@ -629,8 +626,6 @@ Text HLabel 1100 3250 0    50   Input ~ 0
 RESET
 Text HLabel 1100 3050 0    50   Input ~ 0
 READY
-Text HLabel 1100 4050 0    50   Input ~ 0
-~TEST
 Text HLabel 1100 4750 0    50   Input ~ 0
 HOLD
 Text HLabel 1100 4550 0    50   Output ~ 0
@@ -807,8 +802,6 @@ Wire Notes Line
 Wire Notes Line
 	750  2300 750  6500
 Wire Notes Line
-	750  6500 2750 6500
-Wire Notes Line
 	2750 2650 2150 2650
 Wire Notes Line
 	2150 2650 2150 2300
@@ -816,8 +809,6 @@ Wire Notes Line
 	750  2300 2150 2300
 Wire Notes Line
 	2300 500  2300 2650
-Wire Notes Line
-	2750 2650 2750 6500
 Wire Notes Line
 	7000 2900 2750 2900
 Text HLabel 4950 5950 2    50   Output ~ 0
@@ -838,93 +829,93 @@ Text Notes 800  6450 0    50   ~ 0
 8086 Processor
 Text Notes 10750 750  2    50   ~ 0
 Power Decoupling
-Connection ~ 1600 7000
+Connection ~ 2700 7000
 Wire Wire Line
-	1500 7000 1600 7000
+	2600 7000 2700 7000
 Wire Wire Line
-	1150 7000 1100 7000
-Connection ~ 1150 7000
+	2250 7000 2200 7000
+Connection ~ 2250 7000
 Wire Wire Line
-	1200 7000 1150 7000
+	2300 7000 2250 7000
 $Comp
 L power:GND #PWR?
 U 1 1 627AC8BB
-P 1600 7300
-F 0 "#PWR?" H 1600 7050 50  0001 C CNN
-F 1 "GND" H 1605 7127 50  0000 C CNN
-F 2 "" H 1600 7300 50  0001 C CNN
-F 3 "" H 1600 7300 50  0001 C CNN
-	1    1600 7300
+P 2700 7300
+F 0 "#PWR?" H 2700 7050 50  0001 C CNN
+F 1 "GND" H 2705 7127 50  0000 C CNN
+F 2 "" H 2700 7300 50  0001 C CNN
+F 3 "" H 2700 7300 50  0001 C CNN
+	1    2700 7300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 6279446B
-P 1350 7000
-F 0 "R?" V 1143 7000 50  0000 C CNN
-F 1 "1k" V 1234 7000 50  0000 C CNN
-F 2 "" V 1280 7000 50  0001 C CNN
-F 3 "~" H 1350 7000 50  0001 C CNN
-	1    1350 7000
+P 2450 7000
+F 0 "R?" V 2243 7000 50  0000 C CNN
+F 1 "1k" V 2334 7000 50  0000 C CNN
+F 2 "" V 2380 7000 50  0001 C CNN
+F 3 "~" H 2450 7000 50  0001 C CNN
+	1    2450 7000
 	0    1    1    0   
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 6278DB4C
-P 800 7000
-F 0 "#PWR?" H 800 6850 50  0001 C CNN
-F 1 "VCC" H 815 7173 50  0000 C CNN
-F 2 "" H 800 7000 50  0001 C CNN
-F 3 "" H 800 7000 50  0001 C CNN
-	1    800  7000
+P 1900 7000
+F 0 "#PWR?" H 1900 6850 50  0001 C CNN
+F 1 "VCC" H 1915 7173 50  0000 C CNN
+F 2 "" H 1900 7000 50  0001 C CNN
+F 3 "" H 1900 7000 50  0001 C CNN
+	1    1900 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 6277FDCA
-P 1600 7150
-F 0 "C?" H 1715 7196 50  0000 L CNN
-F 1 "100nF" H 1715 7105 50  0000 L CNN
-F 2 "" H 1638 7000 50  0001 C CNN
-F 3 "~" H 1600 7150 50  0001 C CNN
-	1    1600 7150
+P 2700 7150
+F 0 "C?" H 2815 7196 50  0000 L CNN
+F 1 "100nF" H 2815 7105 50  0000 L CNN
+F 2 "" H 2738 7000 50  0001 C CNN
+F 3 "~" H 2700 7150 50  0001 C CNN
+	1    2700 7150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 6277EAFF
-P 950 7000
-F 0 "R?" V 1157 7000 50  0000 C CNN
-F 1 "10k" V 1066 7000 50  0000 C CNN
-F 2 "" V 880 7000 50  0001 C CNN
-F 3 "~" H 950 7000 50  0001 C CNN
-	1    950  7000
+P 2050 7000
+F 0 "R?" V 2257 7000 50  0000 C CNN
+F 1 "10k" V 2166 7000 50  0000 C CNN
+F 2 "" V 1980 7000 50  0001 C CNN
+F 3 "~" H 2050 7000 50  0001 C CNN
+	1    2050 7000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Switch:SW_Push SW?
 U 1 1 626B0BE8
-P 1150 7200
-F 0 "SW?" V 1196 7152 50  0000 R CNN
-F 1 "SW_Push" V 1105 7152 50  0000 R CNN
-F 2 "" H 1150 7400 50  0001 C CNN
-F 3 "~" H 1150 7400 50  0001 C CNN
-	1    1150 7200
+P 2250 7200
+F 0 "SW?" V 2296 7152 50  0000 R CNN
+F 1 "SW_Push" V 2205 7152 50  0000 R CNN
+F 2 "" H 2250 7400 50  0001 C CNN
+F 3 "~" H 2250 7400 50  0001 C CNN
+	1    2250 7200
 	0    -1   -1   0   
 $EndComp
-Text Notes 750  7700 0    50   ~ 0
-Non-Maskable Interrupt Button
+Text Notes 3200 6400 2    50   ~ 0
+Non-Maskable\nInterrupt Button
 Text Label 4950 6250 0    50   ~ 0
 NMI
 $Comp
 L power:GND #PWR?
 U 1 1 6233B1ED
-P 1150 7400
-F 0 "#PWR?" H 1150 7150 50  0001 C CNN
-F 1 "GND" H 1155 7227 50  0000 C CNN
-F 2 "" H 1150 7400 50  0001 C CNN
-F 3 "" H 1150 7400 50  0001 C CNN
-	1    1150 7400
+P 2250 7400
+F 0 "#PWR?" H 2250 7150 50  0001 C CNN
+F 1 "GND" H 2255 7227 50  0000 C CNN
+F 2 "" H 2250 7400 50  0001 C CNN
+F 3 "" H 2250 7400 50  0001 C CNN
+	1    2250 7400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1050,28 +1041,91 @@ Wire Wire Line
 	8050 1200 8450 1200
 Wire Notes Line
 	7900 650  10800 650 
-Wire Notes Line
-	700  6700 700  7750
-Wire Notes Line
-	2150 6700 2150 7750
-Wire Notes Line
-	700  6700 2150 6700
-Wire Notes Line
-	700  7750 2150 7750
 Wire Wire Line
 	3400 7000 3400 6250
 Wire Wire Line
 	3400 6250 3950 6250
 Wire Wire Line
-	1600 7000 3400 7000
+	2700 7000 3400 7000
 Wire Notes Line
 	7900 650  7900 1450
 Wire Notes Line
 	7900 1450 10800 1450
 Wire Notes Line
 	10800 1450 10800 650 
+$Comp
+L Diode:1N4148 D?
+U 1 1 61F82EF7
+P 2450 6650
+AR Path="/61CB92C1/61F82EF7" Ref="D?"  Part="1" 
+AR Path="/6190420C/61F82EF7" Ref="D?"  Part="1" 
+F 0 "D?" H 2450 6433 50  0000 C CNN
+F 1 "1N4148" H 2450 6524 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2450 6475 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2450 6650 50  0001 C CNN
+	1    2450 6650
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	2150 6500 2150 6200
+Wire Notes Line
+	750  6500 2150 6500
+Wire Notes Line
+	2750 6200 2750 2650
+Wire Notes Line
+	2150 6200 3250 6200
+Wire Notes Line
+	1800 7650 3250 7650
+Wire Notes Line
+	1800 7650 1800 6500
+Wire Notes Line
+	3250 7650 3250 6200
+Wire Wire Line
+	2600 6650 2700 6650
+Wire Wire Line
+	2300 6650 2250 6650
+Wire Wire Line
+	2250 6650 2250 7000
+Wire Wire Line
+	2700 6650 2700 7000
+Wire Wire Line
+	1100 4050 1000 4050
+$Comp
+L power:GND #PWR?
+U 1 1 6203EB57
+P 1000 4050
+F 0 "#PWR?" H 1000 3800 50  0001 C CNN
+F 1 "GND" H 1005 3877 50  0000 C CNN
+F 2 "" H 1000 4050 50  0001 C CNN
+F 3 "" H 1000 4050 50  0001 C CNN
+	1    1000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1800 6100 1900
+Wire Wire Line
+	6100 1900 6200 1900
+Wire Wire Line
+	6200 1900 6200 1800
+Wire Wire Line
+	6200 1900 6300 1900
+Wire Wire Line
+	6300 1900 6300 1800
 Wire Bus Line
 	9350 3100 9350 5600
 Wire Bus Line
 	2500 550  5800 550 
+Connection ~ 6200 1900
+$Comp
+L power:GND #PWR?
+U 1 1 6213CD02
+P 6300 1900
+F 0 "#PWR?" H 6300 1650 50  0001 C CNN
+F 1 "GND" H 6305 1727 50  0000 C CNN
+F 2 "" H 6300 1900 50  0001 C CNN
+F 3 "" H 6300 1900 50  0001 C CNN
+	1    6300 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 1900
 $EndSCHEMATC

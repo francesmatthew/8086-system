@@ -256,7 +256,7 @@ $EndComp
 Text Label 7000 3325 2    50   ~ 0
 ~HI_BYTE_FF
 Text Label 7000 5175 2    50   ~ 0
-HI_BYTE_FF
+~HI_BYTE_FF
 $Comp
 L Logic_Programmable:PAL16L8 U?
 U 1 1 61AAD950
@@ -369,14 +369,35 @@ Power decoupling
 Text Notes 6875 1950 0    50   ~ 0
 16L8 PAL: decode low byte
 NoConn ~ 8000 3125
+Text HLabel 8000 3225 2    50   Input ~ 0
+~BHE
+Text HLabel 8000 5075 2    50   Input ~ 0
+~BHE
+$Comp
+L 74xx:74LS30 U?
+U 2 1 61F51AA5
+P 4550 5050
+F 0 "U?" H 4780 5096 50  0000 L CNN
+F 1 "74LS30" H 4780 5005 50  0000 L CNN
+F 2 "" H 4550 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS30" H 4550 5050 50  0001 C CNN
+	2    4550 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4550 3750 4550
+Wire Wire Line
+	3750 4550 3750 4850
+Connection ~ 3750 4850
+Wire Wire Line
+	4550 5550 3750 5550
+Wire Wire Line
+	3750 5550 3750 5150
 Wire Bus Line
 	6675 4150 6675 4975
 Wire Bus Line
 	6675 2300 6675 3125
 Wire Bus Line
 	3200 2475 3200 3300
-Text HLabel 8000 3225 2    50   Input ~ 0
-~BHE
-Text HLabel 8000 5075 2    50   Input ~ 0
-~BHE
+Connection ~ 3750 5150
 $EndSCHEMATC

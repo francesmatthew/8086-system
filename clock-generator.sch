@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 15
+Sheet 3 15
 Title "clock-generator"
 Date ""
 Rev ""
@@ -204,10 +204,6 @@ Wire Wire Line
 Connection ~ 2250 1600
 Text HLabel 6400 3200 2    50   Output ~ 0
 READY
-Text HLabel 5000 3200 0    50   Input ~ 0
-RDY1
-Text HLabel 5000 3300 0    50   Input ~ 0
-RDY2
 NoConn ~ 5000 3700
 Wire Wire Line
 	5000 3400 4850 3400
@@ -242,12 +238,6 @@ F 3 "" H 5500 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	7250 2400 4700 2400
-Wire Notes Line
-	4700 2400 4700 4750
-Wire Notes Line
-	4700 4750 7250 4750
-Wire Notes Line
 	7250 2400 7250 4750
 Text Notes 7200 2500 2    50   ~ 0
 Clock Generator Chip
@@ -271,4 +261,39 @@ Wire Notes Line
 	3050 2450 1450 2450
 Text Notes 1500 1450 0    50   ~ 0
 Reset Button
+Wire Wire Line
+	5000 3300 4750 3300
+Wire Wire Line
+	5000 3200 4750 3200
+Wire Wire Line
+	4750 3300 4750 3200
+$Comp
+L Device:R R?
+U 1 1 61F71673
+P 4750 3050
+F 0 "R?" H 4820 3096 50  0000 L CNN
+F 1 "1k" H 4820 3005 50  0000 L CNN
+F 2 "" V 4680 3050 50  0001 C CNN
+F 3 "~" H 4750 3050 50  0001 C CNN
+	1    4750 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61F75C77
+P 4750 2900
+F 0 "#PWR?" H 4750 2750 50  0001 C CNN
+F 1 "VCC" H 4765 3073 50  0000 C CNN
+F 2 "" H 4750 2900 50  0001 C CNN
+F 3 "" H 4750 2900 50  0001 C CNN
+	1    4750 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 3200
+Wire Notes Line
+	4550 2400 4550 4750
+Wire Notes Line
+	4550 2400 7250 2400
+Wire Notes Line
+	4550 4750 7250 4750
 $EndSCHEMATC

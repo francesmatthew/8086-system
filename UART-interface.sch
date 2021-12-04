@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 15
+Sheet 4 15
 Title "UART-interface"
 Date ""
 Rev ""
@@ -294,7 +294,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 4750 8850 4750
 Wire Wire Line
-	8900 4750 8900 5650
+	8900 4750 8900 5150
 Connection ~ 8900 4750
 Wire Wire Line
 	3450 1300 9200 1300
@@ -402,9 +402,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 5350 9200 1300
 NoConn ~ 6250 4350
-NoConn ~ 8850 4550
 NoConn ~ 8850 4850
-NoConn ~ 8850 5150
 NoConn ~ 3450 1900
 NoConn ~ 3450 2200
 Wire Notes Line
@@ -477,8 +475,18 @@ Text HLabel 1450 2500 0    50   Input ~ 0
 ~CS
 Wire Notes Line
 	3650 4450 600  4450
+Wire Wire Line
+	8850 4550 8900 4550
+Wire Wire Line
+	8900 4550 8900 4650
+Connection ~ 8900 4650
+Wire Wire Line
+	8850 5150 8900 5150
 Wire Bus Line
 	1250 1800 1250 2100
 Wire Bus Line
 	1250 900  1250 1700
+Connection ~ 8900 5150
+Wire Wire Line
+	8900 5150 8900 5650
 $EndSCHEMATC

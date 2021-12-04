@@ -346,7 +346,7 @@ F 3 "~" H 4300 5050 50  0001 C CNN
 $EndComp
 Text HLabel 4100 4950 0    50   Input ~ 0
 RESET
-Text HLabel 4600 4750 2    50   Input ~ 0
+Text HLabel 4100 5050 0    50   Input ~ 0
 ~BHE
 $Comp
 L power:GND #PWR?
@@ -506,14 +506,59 @@ Wire Notes Line
 	3700 4450 5000 4450
 Text Notes 4950 5650 2    50   ~ 0
 Control Signal Headers
+Text HLabel 4100 5150 0    50   Input ~ 0
+M\~IO
+Text HLabel 4100 5250 0    50   Input ~ 0
+~WR
+Text HLabel 4100 5350 0    50   Input ~ 0
+~RD
+NoConn ~ 4100 5450
+NoConn ~ 4600 5450
+Wire Wire Line
+	4600 4750 4700 4750
+Wire Wire Line
+	4700 4750 4700 4850
+Wire Wire Line
+	4700 4850 4600 4850
+Wire Wire Line
+	4600 4950 4700 4950
+Wire Wire Line
+	4700 4950 4700 4850
+Connection ~ 4700 4850
+Wire Wire Line
+	4600 5050 4700 5050
+Wire Wire Line
+	4700 5050 4700 4950
+Connection ~ 4700 4950
+Wire Wire Line
+	4600 5150 4700 5150
+Wire Wire Line
+	4700 5150 4700 5050
+Connection ~ 4700 5050
+Wire Wire Line
+	4600 5250 4700 5250
+Wire Wire Line
+	4700 5250 4700 5150
+Connection ~ 4700 5150
+$Comp
+L power:GND #PWR?
+U 1 1 62100CCC
+P 4700 5350
+F 0 "#PWR?" H 4700 5100 50  0001 C CNN
+F 1 "GND" H 4705 5177 50  0000 C CNN
+F 2 "" H 4700 5350 50  0001 C CNN
+F 3 "" H 4700 5350 50  0001 C CNN
+	1    4700 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5350 4700 5350
+Wire Wire Line
+	4700 5250 4700 5350
 Wire Bus Line
 	6050 1950 8100 1950
 Wire Bus Line
 	1900 1950 4650 1950
-Text HLabel 4600 4850 2    50   Input ~ 0
-M\~IO
-Text HLabel 4600 4950 2    50   Input ~ 0
-~WR
-Text HLabel 4600 5050 2    50   Input ~ 0
-~RD
+Connection ~ 4700 5250
+Connection ~ 4700 5350
 $EndSCHEMATC
