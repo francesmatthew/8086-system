@@ -461,6 +461,7 @@ F12 "~CS_LED" O R 3825 4500 50
 F13 "~CS_SW" O R 3825 4625 50 
 F14 "~CS_7_SEG_0" O R 3825 4250 50 
 F15 "~CS_7_SEG_1" O R 3825 4375 50 
+F16 "~BHE" I L 2700 4125 50 
 $EndSheet
 Connection ~ 6325 3100
 Wire Bus Line
@@ -552,4 +553,6 @@ Text Label 4675 3600 2    50   ~ 0
 PCLK
 Text Label 4675 3700 2    50   ~ 0
 RESET
+Text Label 2700 4125 2    50   ~ 0
+~BHE
 $EndSCHEMATC

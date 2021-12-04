@@ -271,7 +271,6 @@ F 3 "" H 7500 3025 50  0001 C CNN
 	1    7500 3025
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8000 5075
 Text HLabel 8000 2525 2    50   Output ~ 0
 ~CS_PPI1
 Text HLabel 8000 2625 2    50   Output ~ 0
@@ -284,9 +283,9 @@ Text HLabel 8000 2925 2    50   Output ~ 0
 ~CS_CNTR
 Text HLabel 8000 3025 2    50   Output ~ 0
 ~CS_KBRD
-Text HLabel 8000 3125 2    50   Output ~ 0
+Text HLabel 8000 4875 2    50   Output ~ 0
 ~CS_UART
-Text HLabel 8000 3225 2    50   Output ~ 0
+Text HLabel 8000 4775 2    50   Output ~ 0
 ~CS_LCD
 Text HLabel 8000 4375 2    50   Output ~ 0
 ~CS_7_SEG_0
@@ -296,8 +295,6 @@ Text HLabel 8000 4575 2    50   Output ~ 0
 ~CS_LED
 Text HLabel 8000 4675 2    50   Output ~ 0
 ~CS_SW
-NoConn ~ 8000 4775
-NoConn ~ 8000 4875
 NoConn ~ 8000 4975
 $Comp
 L Device:C C?
@@ -371,10 +368,15 @@ Text Notes 3200 4475 0    50   ~ 0
 Power decoupling
 Text Notes 6875 1950 0    50   ~ 0
 16L8 PAL: decode low byte
+NoConn ~ 8000 3125
 Wire Bus Line
 	6675 4150 6675 4975
 Wire Bus Line
 	6675 2300 6675 3125
 Wire Bus Line
 	3200 2475 3200 3300
+Text HLabel 8000 3225 2    50   Input ~ 0
+~BHE
+Text HLabel 8000 5075 2    50   Input ~ 0
+~BHE
 $EndSCHEMATC
