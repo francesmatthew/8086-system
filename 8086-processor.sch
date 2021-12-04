@@ -604,11 +604,11 @@ NMI
 Text HLabel 1100 2850 0    50   Input ~ 0
 CLK
 Text HLabel 2500 550  3    50   Output ~ 0
-ADDRESS_BUS
+A[0..19]
 Text HLabel 6000 800  1    50   Output ~ 0
 ~BHE
 Text HLabel 9350 3100 2    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text HLabel 1100 3750 0    50   Input ~ 0
 INTR
 $Comp
@@ -626,10 +626,6 @@ Text HLabel 1100 3250 0    50   Input ~ 0
 RESET
 Text HLabel 1100 3050 0    50   Input ~ 0
 READY
-Text HLabel 1100 4750 0    50   Input ~ 0
-HOLD
-Text HLabel 1100 4550 0    50   Output ~ 0
-HLDA
 Text HLabel 2500 5850 2    50   Output ~ 0
 ~INTA
 Wire Wire Line
@@ -1093,12 +1089,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 6203EB57
-P 1000 4050
-F 0 "#PWR?" H 1000 3800 50  0001 C CNN
-F 1 "GND" H 1005 3877 50  0000 C CNN
-F 2 "" H 1000 4050 50  0001 C CNN
-F 3 "" H 1000 4050 50  0001 C CNN
-	1    1000 4050
+P 1000 4850
+F 0 "#PWR?" H 1000 4600 50  0001 C CNN
+F 1 "GND" H 1005 4677 50  0000 C CNN
+F 2 "" H 1000 4850 50  0001 C CNN
+F 3 "" H 1000 4850 50  0001 C CNN
+	1    1000 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1111,10 +1107,6 @@ Wire Wire Line
 	6200 1900 6300 1900
 Wire Wire Line
 	6300 1900 6300 1800
-Wire Bus Line
-	9350 3100 9350 5600
-Wire Bus Line
-	2500 550  5800 550 
 Connection ~ 6200 1900
 $Comp
 L power:GND #PWR?
@@ -1128,4 +1120,16 @@ F 3 "" H 6300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6300 1900
+Wire Wire Line
+	1000 4050 1000 4750
+Wire Wire Line
+	1100 4750 1000 4750
+Connection ~ 1000 4750
+Wire Wire Line
+	1000 4850 1000 4750
+NoConn ~ 1100 4550
+Wire Bus Line
+	9350 3100 9350 5600
+Wire Bus Line
+	2500 550  5800 550 
 $EndSCHEMATC

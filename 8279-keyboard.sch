@@ -134,7 +134,7 @@ D6
 Text Label 1650 6650 0    50   ~ 0
 D7
 Text HLabel 1550 6850 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text Label 3900 6750 2    50   ~ 0
 A1
 Wire Wire Line
@@ -144,7 +144,7 @@ Entry Wire Line
 Wire Bus Line
 	4000 6850 4000 6950
 Text HLabel 4000 6950 2    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text HLabel 1750 5750 0    50   Input ~ 0
 ~RD
 Text HLabel 1750 5850 0    50   Input ~ 0

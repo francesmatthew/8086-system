@@ -236,7 +236,7 @@ A8
 Wire Wire Line
 	5050 1825 4850 1825
 Text HLabel 4750 875  0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Wire Wire Line
 	7900 2525 7700 2525
 Text Label 7700 2525 0    50   ~ 0
@@ -326,7 +326,7 @@ A8
 Wire Wire Line
 	7900 1825 7700 1825
 Text HLabel 7600 875  0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Wire Wire Line
 	5625 5525 5425 5525
 Text Label 5425 5525 0    50   ~ 0
@@ -418,7 +418,7 @@ A8
 Wire Wire Line
 	5625 4825 5425 4825
 Text HLabel 5325 3875 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Wire Wire Line
 	8325 5500 8125 5500
 Text Label 8125 5500 0    50   ~ 0
@@ -510,7 +510,7 @@ A8
 Wire Wire Line
 	8325 4800 8125 4800
 Text HLabel 8025 3850 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Entry Wire Line
 	7600 2425 7700 2525
 $Comp
@@ -580,7 +580,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 2900 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 1250 2000 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Entry Wire Line
 	1250 4825 1350 4925
 Entry Wire Line
@@ -736,7 +736,7 @@ Entry Wire Line
 Entry Wire Line
 	6575 1825 6475 1725
 Text HLabel 6575 2125 2    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Wire Wire Line
 	9100 1825 9325 1825
 Text Label 9325 1825 2    50   ~ 0
@@ -786,7 +786,7 @@ Entry Wire Line
 Entry Wire Line
 	9425 1825 9325 1725
 Text HLabel 9425 2125 2    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Wire Wire Line
 	9525 4800 9750 4800
 Text Label 9750 4800 2    50   ~ 0
@@ -836,7 +836,7 @@ Entry Wire Line
 Entry Wire Line
 	9850 4800 9750 4700
 Text HLabel 9850 5100 2    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Wire Wire Line
 	6825 4825 7050 4825
 Text Label 7050 4825 2    50   ~ 0
@@ -886,7 +886,7 @@ Entry Wire Line
 Entry Wire Line
 	7150 4825 7050 4725
 Text HLabel 7150 5125 2    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Wire Wire Line
 	1350 4925 2400 4925
 $Comp

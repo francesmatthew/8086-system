@@ -176,7 +176,7 @@ D14
 Text Label 1350 1800 0    50   ~ 0
 D15
 Text HLabel 1250 900  0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text Notes 10800 850  2    50   ~ 0
 UART Interface\n I/O  Addresses 0xFFEF to 0xFFE1
 Wire Notes Line
@@ -221,6 +221,8 @@ $Comp
 L DSUB-9:DSUB-9 J?
 U 1 1 61A48DF3
 P 9850 3000
+AR Path="/61A48DF3" Ref="J?"  Part="1" 
+AR Path="/61A42887/61A48DF3" Ref="J?"  Part="1" 
 F 0 "J?" H 10678 2653 60  0000 L CNN
 F 1 "DSUB-9" H 10678 2547 60  0000 L CNN
 F 2 "DSUB-9" H 10450 2640 60  0001 C CNN
@@ -255,7 +257,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 2000 1350 2000
 Text HLabel 1250 1800 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text Label 1350 2000 0    50   ~ 0
 A1
 Text Label 1350 2100 0    50   ~ 0
@@ -482,11 +484,11 @@ Wire Wire Line
 Connection ~ 8900 4650
 Wire Wire Line
 	8850 5150 8900 5150
+Connection ~ 8900 5150
+Wire Wire Line
+	8900 5150 8900 5650
 Wire Bus Line
 	1250 1800 1250 2100
 Wire Bus Line
 	1250 900  1250 1700
-Connection ~ 8900 5150
-Wire Wire Line
-	8900 5150 8900 5650
 $EndSCHEMATC

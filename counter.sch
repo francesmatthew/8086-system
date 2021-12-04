@@ -73,7 +73,7 @@ D6
 Text Label 4200 3725 0    50   ~ 0
 D7
 Text HLabel 4100 2800 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text HLabel 4400 3925 0    50   Input ~ 0
 ~RD
 Text HLabel 4400 4025 0    50   Input ~ 0
@@ -91,7 +91,7 @@ Entry Wire Line
 Entry Wire Line
 	3975 4125 4075 4225
 Text HLabel 3975 3900 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text HLabel 4400 4425 0    50   Input ~ 0
 ~CS
 $Comp
@@ -325,10 +325,6 @@ Wire Wire Line
 	6150 4850 6150 5150
 Wire Wire Line
 	6150 5150 6350 5150
-Wire Bus Line
-	3975 3900 3975 4125
-Wire Bus Line
-	4100 2800 4100 3625
 Connection ~ 6350 5150
 $Comp
 L power:GND #PWR?
@@ -353,4 +349,8 @@ F 3 "" H 6850 3825 50  0001 C CNN
 	1    6850 3825
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	3975 3900 3975 4125
+Wire Bus Line
+	4100 2800 4100 3625
 $EndSCHEMATC

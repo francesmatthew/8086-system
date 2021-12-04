@@ -73,7 +73,7 @@ $EndComp
 Text Notes 2650 1575 0    50   ~ 0
 8259 Interrupt Controller
 Text HLabel 2025 2825 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Wire Bus Line
 	2025 2950 2025 2825
 Entry Wire Line
@@ -93,7 +93,7 @@ Text HLabel 2525 3350 0    50   Input ~ 0
 Text HLabel 2525 3250 0    50   Input ~ 0
 ~CS
 Text HLabel 2225 1950 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Entry Wire Line
 	2225 2750 2325 2850
 Entry Wire Line

@@ -241,9 +241,9 @@ D3
 Text Label 6900 2050 3    50   ~ 0
 D2
 Text HLabel 6050 1950 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text HLabel 4650 1950 2    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text Label 7000 2050 3    50   ~ 0
 D0
 Text Label 7500 2050 3    50   ~ 0
@@ -452,7 +452,7 @@ F 3 "" H 2100 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	2250 4800 2250 6700
+	2700 4800 2700 6700
 Wire Notes Line
 	950  4800 950  6700
 Wire Notes Line
@@ -492,10 +492,6 @@ F 3 "~" H 1300 5260 50  0001 C CNN
 	1    1250 5300
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	950  6700 2250 6700
-Wire Notes Line
-	950  4800 2250 4800
 Wire Notes Line
 	3700 4450 3700 5700
 Wire Notes Line
@@ -555,10 +551,56 @@ Wire Wire Line
 	4600 5350 4700 5350
 Wire Wire Line
 	4700 5250 4700 5350
+Connection ~ 4700 5250
+Connection ~ 4700 5350
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 624921AD
+P 2450 5200
+F 0 "#FLG?" H 2450 5275 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 5373 50  0000 C CNN
+F 2 "" H 2450 5200 50  0001 C CNN
+F 3 "~" H 2450 5200 50  0001 C CNN
+	1    2450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 62492DD0
+P 2450 6150
+F 0 "#FLG?" H 2450 6225 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 6323 50  0000 C CNN
+F 2 "" H 2450 6150 50  0001 C CNN
+F 3 "~" H 2450 6150 50  0001 C CNN
+	1    2450 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6150 2100 6150
+Connection ~ 2100 6150
+Wire Wire Line
+	2100 5200 2450 5200
+Connection ~ 2100 5200
+Wire Notes Line
+	950  4800 2700 4800
+Wire Notes Line
+	950  6700 2700 6700
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 6260FA53
+P 2450 5500
+F 0 "#FLG?" H 2450 5575 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 5673 50  0000 C CNN
+F 2 "" H 2450 5500 50  0001 C CNN
+F 3 "~" H 2450 5500 50  0001 C CNN
+	1    2450 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 5500 1850 5500
 Wire Bus Line
 	6050 1950 8100 1950
 Wire Bus Line
 	1900 1950 4650 1950
-Connection ~ 4700 5250
-Connection ~ 4700 5350
+Connection ~ 1850 5500
 $EndSCHEMATC

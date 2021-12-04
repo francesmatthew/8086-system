@@ -315,9 +315,9 @@ Entry Wire Line
 Entry Wire Line
 	6000 5700 5900 5800
 Text HLabel 5900 5900 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text HLabel 8500 6000 2    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Entry Wire Line
 	8700 2250 8800 2150
 Entry Wire Line
@@ -343,7 +343,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 2750 8300 2750
 Text HLabel 8800 1950 2    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Entry Wire Line
 	5750 1950 5650 1850
 Entry Wire Line
@@ -389,9 +389,9 @@ Wire Wire Line
 Wire Wire Line
 	6100 2950 5750 2950
 Text HLabel 8550 3600 2    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text HLabel 5850 3450 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text Label 5750 2950 0    50   ~ 0
 A1
 Text Label 5750 2850 0    50   ~ 0
@@ -451,7 +451,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 5200 8300 5200
 Text HLabel 8800 4400 2    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text Label 8700 5200 2    50   ~ 0
 A11
 Text Label 8700 5000 2    50   ~ 0
@@ -509,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 5400 5750 5400
 Text HLabel 5650 4200 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text Label 5750 5400 0    50   ~ 0
 A1
 Text Label 5750 5300 0    50   ~ 0
@@ -565,9 +565,9 @@ A18
 Text Label 1500 2900 0    50   ~ 0
 A19
 Text HLabel 1400 2600 2    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text HLabel 5650 1750 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text Label 3500 3100 0    50   ~ 0
 ~CE_HI_BYTE
 Text Label 3500 5150 0    50   ~ 0

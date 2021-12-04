@@ -76,7 +76,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS30" H 3825 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 3200 2475 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text Label 4125 3000 0    50   ~ 0
 ~HI_BYTE_FF
 $Comp
@@ -110,7 +110,7 @@ $EndComp
 Text HLabel 7000 3425 0    50   Input ~ 0
 M\~IO
 Text HLabel 6675 2300 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Entry Wire Line
 	6675 3125 6775 3225
 Entry Wire Line
@@ -190,7 +190,7 @@ $EndComp
 Text HLabel 7000 5275 0    50   Input ~ 0
 M\~IO
 Text HLabel 6675 4150 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Entry Wire Line
 	6675 4975 6775 5075
 Entry Wire Line

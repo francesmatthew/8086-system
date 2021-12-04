@@ -65,7 +65,7 @@ F 3 "~" H 5900 2675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 4050 3000 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Entry Wire Line
 	4050 3175 4150 3275
 Entry Wire Line
@@ -113,7 +113,7 @@ F 3 "" H 5000 2075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 4050 4500 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Entry Wire Line
 	4050 4375 4150 4275
 Text Label 4150 4275 0    50   ~ 0

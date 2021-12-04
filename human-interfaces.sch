@@ -14,9 +14,9 @@ Comment3 "Editor: Brian Cruz"
 Comment4 "Designer: Matthew Frances"
 $EndDescr
 Text HLabel 1100 5650 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text HLabel 2700 1350 0    50   Input ~ 0
-ADDRESS_BUS
+A[0..19]
 Text HLabel 850  7350 3    50   Input ~ 0
 ~LED_CS
 Text HLabel 1600 1850 0    50   Input ~ 0
@@ -437,7 +437,7 @@ Wire Wire Line
 Text HLabel 5950 4850 0    50   Input ~ 0
 ~WR
 Text HLabel 6600 3650 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Entry Wire Line
 	6700 3850 6600 3750
 Entry Wire Line
@@ -562,7 +562,7 @@ Wire Wire Line
 Text HLabel 8350 5550 0    50   Input ~ 0
 ~WR
 Text HLabel 8950 4350 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Entry Wire Line
 	9050 4550 8950 4450
 Entry Wire Line
@@ -807,9 +807,9 @@ F 3 "" H 2400 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 2700 2550 2    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Text HLabel 4200 1250 0    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 Wire Wire Line
 	4000 2050 4100 2050
 Wire Wire Line
@@ -881,14 +881,10 @@ Wire Notes Line
 	4850 3550 4850 4750
 Text Notes 4800 3650 2    50   ~ 0
 Power Decoupling
-Wire Notes Line
-	1200 1100 4300 1100
-Text Notes 1250 2750 0    50   ~ 0
+Text Notes 850  2750 0    50   ~ 0
 4x20 LCD Display\n0xFFD0, 0xFFD2, 0xFFD4, 0xFFD6
 Wire Notes Line
-	1200 2800 4300 2800
-Wire Notes Line
-	1200 1100 1200 2800
+	800  1100 800  2800
 Wire Notes Line
 	4300 1100 4300 2800
 Text Notes 5100 5450 2    50   ~ 0
@@ -1030,20 +1026,6 @@ Wire Notes Line
 	11050 3250 11050 6100
 Wire Notes Line
 	11050 3250 5250 3250
-Wire Bus Line
-	2700 1350 2700 1750
-Wire Bus Line
-	4200 1250 4200 1650
-Wire Bus Line
-	2700 2150 2700 2550
-Wire Bus Line
-	8950 4350 8950 5150
-Wire Bus Line
-	6600 3650 6600 4450
-Wire Bus Line
-	1100 5650 1100 6450
-Wire Bus Line
-	10500 1250 10500 2050
 Text Notes 10950 2950 2    50   ~ 0
 DIP Switches\n0xFFCA
 Wire Notes Line
@@ -1310,7 +1292,7 @@ Entry Wire Line
 Entry Wire Line
 	10400 1450 10500 1350
 Text HLabel 10500 1250 2    50   BiDi ~ 0
-DATA_BUS
+D[0..15]
 $Comp
 L 74xx:74LS244 U?
 U 1 1 61CCECC9
@@ -1335,4 +1317,72 @@ F 3 "~" H 7600 1850 50  0001 C CNN
 $EndComp
 Text HLabel 8600 2350 0    50   Input ~ 0
 ~DIP_CS
+$Comp
+L power:VCC #PWR?
+U 1 1 6258205E
+P 1000 1450
+F 0 "#PWR?" H 1000 1300 50  0001 C CNN
+F 1 "VCC" H 1015 1623 50  0000 C CNN
+F 2 "" H 1000 1450 50  0001 C CNN
+F 3 "" H 1000 1450 50  0001 C CNN
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 625829F1
+P 1000 2150
+F 0 "#PWR?" H 1000 1900 50  0001 C CNN
+F 1 "GND" H 1005 1977 50  0000 C CNN
+F 2 "" H 1000 2150 50  0001 C CNN
+F 3 "" H 1000 2150 50  0001 C CNN
+	1    1000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62583966
+P 1000 1600
+F 0 "R?" H 1070 1646 50  0000 L CNN
+F 1 "R" H 1070 1555 50  0000 L CNN
+F 2 "" V 930 1600 50  0001 C CNN
+F 3 "~" H 1000 1600 50  0001 C CNN
+	1    1000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62585A0D
+P 1000 2000
+F 0 "R?" H 1070 2046 50  0000 L CNN
+F 1 "R" H 1070 1955 50  0000 L CNN
+F 2 "" V 930 2000 50  0001 C CNN
+F 3 "~" H 1000 2000 50  0001 C CNN
+	1    1000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1750 1000 1850
+Text Label 1000 1800 2    50   ~ 0
+V0
+Text Label 2900 1650 2    50   ~ 0
+V0
+Wire Notes Line
+	800  2800 4300 2800
+Wire Notes Line
+	800  1100 4300 1100
+Wire Bus Line
+	2700 1350 2700 1750
+Wire Bus Line
+	4200 1250 4200 1650
+Wire Bus Line
+	2700 2150 2700 2550
+Wire Bus Line
+	8950 4350 8950 5150
+Wire Bus Line
+	6600 3650 6600 4450
+Wire Bus Line
+	1100 5650 1100 6450
+Wire Bus Line
+	10500 1250 10500 2050
 $EndSCHEMATC
