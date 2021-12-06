@@ -371,7 +371,7 @@ F 3 "" H 2100 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L Device:CP1 C1
 U 1 1 61D25BD4
 P 1850 5350
 F 0 "C1" H 1965 5396 50  0000 L CNN
@@ -401,7 +401,7 @@ AR Path="/61D2B6EC" Ref="J?"  Part="1"
 AR Path="/626E3AF4/61D2B6EC" Ref="J2"  Part="1" 
 F 0 "J2" H 1307 6575 50  0000 C CNN
 F 1 "Barrel_Jack +12V" H 1307 6484 50  0000 C CNN
-F 2 "" H 1300 6210 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1300 6210 50  0001 C CNN
 F 3 "~" H 1300 6210 50  0001 C CNN
 	1    1250 6250
 	1    0    0    -1  
@@ -418,7 +418,7 @@ F 3 "" H 1700 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L Device:CP1 C2
 U 1 1 61D2B6FE
 P 1850 6300
 F 0 "C2" H 1965 6346 50  0000 L CNN
@@ -487,7 +487,7 @@ AR Path="/61D25BC2" Ref="J?"  Part="1"
 AR Path="/626E3AF4/61D25BC2" Ref="J1"  Part="1" 
 F 0 "J1" H 1307 5625 50  0000 C CNN
 F 1 "Barrel_Jack +5V" H 1307 5534 50  0000 C CNN
-F 2 "" H 1300 5260 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1300 5260 50  0001 C CNN
 F 3 "~" H 1300 5260 50  0001 C CNN
 	1    1250 5300
 	1    0    0    -1  
