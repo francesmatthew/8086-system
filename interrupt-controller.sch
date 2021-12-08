@@ -476,49 +476,15 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 8900 5250 50  0001 C CNN
 	4    8900 5250
 	0    1    -1   0   
 $EndComp
-$Comp
-L 74xx:74LS14 U14
-U 5 1 6222BF93
-P 9550 5250
-F 0 "U14" V 9504 5430 50  0000 L CNN
-F 1 "74LS14" V 9595 5430 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 9550 5250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 9550 5250 50  0001 C CNN
-	5    9550 5250
-	0    1    -1   0   
-$EndComp
-$Comp
-L 74xx:74LS14 U14
-U 6 1 6222E721
-P 10250 5250
-F 0 "U14" V 10204 5430 50  0000 L CNN
-F 1 "74LS14" V 10295 5430 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 10250 5250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 10250 5250 50  0001 C CNN
-	6    10250 5250
-	0    1    -1   0   
-$EndComp
-NoConn ~ 10250 4950
-NoConn ~ 9550 4950
 NoConn ~ 8900 4950
 NoConn ~ 8200 4950
 NoConn ~ 7500 4950
 Wire Wire Line
-	10250 5550 10250 5650
-Wire Wire Line
-	10250 5650 9550 5650
-Wire Wire Line
-	9550 5650 9550 5550
-Wire Wire Line
-	9550 5650 8900 5650
-Wire Wire Line
 	8900 5650 8900 5550
-Connection ~ 9550 5650
 Wire Wire Line
 	8900 5650 8200 5650
 Wire Wire Line
 	8200 5650 8200 5550
-Connection ~ 8900 5650
 Wire Wire Line
 	8200 5650 7500 5650
 Wire Wire Line
@@ -553,6 +519,40 @@ Wire Wire Line
 Connection ~ 4650 3600
 Wire Wire Line
 	4650 3600 4900 3600
+Connection ~ 8900 5650
+Wire Wire Line
+	9550 5650 8900 5650
+Wire Wire Line
+	9550 5650 9550 5550
+Connection ~ 9550 5650
+Wire Wire Line
+	10250 5650 9550 5650
+Wire Wire Line
+	10250 5550 10250 5650
+NoConn ~ 9550 4950
+NoConn ~ 10250 4950
+$Comp
+L 74xx:74LS14 U14
+U 6 1 6222E721
+P 10250 5250
+F 0 "U14" V 10204 5430 50  0000 L CNN
+F 1 "74LS14" V 10295 5430 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 10250 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 10250 5250 50  0001 C CNN
+	6    10250 5250
+	0    1    -1   0   
+$EndComp
+$Comp
+L 74xx:74LS14 U14
+U 5 1 6222BF93
+P 9550 5250
+F 0 "U14" V 9504 5430 50  0000 L CNN
+F 1 "74LS14" V 9595 5430 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9550 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 9550 5250 50  0001 C CNN
+	5    9550 5250
+	0    1    -1   0   
+$EndComp
 Wire Bus Line
 	2225 1950 2225 2750
 $EndSCHEMATC

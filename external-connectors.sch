@@ -493,14 +493,10 @@ F 3 "~" H 1300 5260 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	3700 4450 3700 5700
-Wire Notes Line
-	3700 5700 5000 5700
-Wire Notes Line
-	5000 5700 5000 4450
+	3700 6000 5000 6000
 Wire Notes Line
 	3700 4450 5000 4450
-Text Notes 4950 5650 2    50   ~ 0
+Text Notes 4950 5950 2    50   ~ 0
 Control Signal Headers
 Text HLabel 4100 5150 0    50   Input ~ 0
 M\~IO
@@ -508,8 +504,6 @@ Text HLabel 4100 5250 0    50   Input ~ 0
 ~WR
 Text HLabel 4100 5350 0    50   Input ~ 0
 ~RD
-NoConn ~ 4100 5450
-NoConn ~ 4600 5450
 Wire Wire Line
 	4600 4750 4700 4750
 Wire Wire Line
@@ -539,12 +533,12 @@ Connection ~ 4700 5150
 $Comp
 L power:GND #PWR0105
 U 1 1 62100CCC
-P 4700 5350
-F 0 "#PWR0105" H 4700 5100 50  0001 C CNN
-F 1 "GND" H 4705 5177 50  0000 C CNN
-F 2 "" H 4700 5350 50  0001 C CNN
-F 3 "" H 4700 5350 50  0001 C CNN
-	1    4700 5350
+P 4700 5600
+F 0 "#PWR0105" H 4700 5350 50  0001 C CNN
+F 1 "GND" H 4705 5427 50  0000 C CNN
+F 2 "" H 4700 5600 50  0001 C CNN
+F 3 "" H 4700 5600 50  0001 C CNN
+	1    4700 5600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -552,7 +546,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 5250 4700 5350
 Connection ~ 4700 5250
-Connection ~ 4700 5350
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 624921AD
@@ -599,6 +592,91 @@ $EndComp
 Wire Wire Line
 	2450 5500 1850 5500
 Connection ~ 1850 5500
+Text Notes 7050 4350 0    50   ~ 0
+PWR LED
+$Comp
+L power:VCC #PWR02
+U 1 1 61BA534A
+P 7350 4600
+F 0 "#PWR02" H 7350 4450 50  0001 C CNN
+F 1 "VCC" H 7365 4773 50  0000 C CNN
+F 2 "" H 7350 4600 50  0001 C CNN
+F 3 "" H 7350 4600 50  0001 C CNN
+	1    7350 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 61BA5A77
+P 7350 5200
+F 0 "#PWR03" H 7350 4950 50  0001 C CNN
+F 1 "GND" H 7355 5027 50  0000 C CNN
+F 2 "" H 7350 5200 50  0001 C CNN
+F 3 "" H 7350 5200 50  0001 C CNN
+	1    7350 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5450 4100 5550
+Wire Wire Line
+	4100 5550 4850 5550
+Wire Wire Line
+	4850 5550 4850 5450
+Wire Wire Line
+	4700 5600 4700 5350
+Connection ~ 4700 5350
+$Comp
+L power:VCC #PWR01
+U 1 1 61BBFA03
+P 4850 4850
+F 0 "#PWR01" H 4850 4700 50  0001 C CNN
+F 1 "VCC" H 4865 5023 50  0000 C CNN
+F 2 "" H 4850 4850 50  0001 C CNN
+F 3 "" H 4850 4850 50  0001 C CNN
+	1    4850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5450 4850 5450
+Connection ~ 4850 5450
+Wire Wire Line
+	4850 5450 4850 4850
+Wire Notes Line
+	5000 4450 5000 6000
+Wire Notes Line
+	3700 4450 3700 6000
+$Comp
+L Device:LED D?
+U 1 1 61BD0CAA
+P 7350 5050
+AR Path="/61CCC9EF/61BD0CAA" Ref="D?"  Part="1" 
+AR Path="/626E3AF4/61BD0CAA" Ref="D12"  Part="1" 
+F 0 "D12" H 7343 5267 50  0000 C CNN
+F 1 "LED" H 7343 5176 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7350 5050 50  0001 C CNN
+F 3 "~" H 7350 5050 50  0001 C CNN
+	1    7350 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 61BD3D88
+P 7350 4750
+F 0 "R23" H 7281 4704 50  0000 R CNN
+F 1 "330" H 7281 4795 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7280 4750 50  0001 C CNN
+F 3 "~" H 7350 4750 50  0001 C CNN
+	1    7350 4750
+	1    0    0    1   
+$EndComp
+Wire Notes Line
+	7050 4250 7050 5450
+Wire Notes Line
+	7050 5450 7550 5450
+Wire Notes Line
+	7550 5450 7550 4250
+Wire Notes Line
+	7050 4250 7550 4250
 Wire Bus Line
 	6050 1950 8100 1950
 Wire Bus Line
