@@ -24,8 +24,8 @@ AR Path="/61C40B21/61C3F083" Ref="J?"  Part="1"
 AR Path="/61C417C6/61C3F083" Ref="J15"  Part="1" 
 AR Path="/61C41B68/61C3F083" Ref="J?"  Part="1" 
 F 0 "J15" H 5980 4467 50  0000 L CNN
-F 1 "Conn_01x08" H 5980 4376 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5900 4475 50  0001 C CNN
+F 1 "PORT C" H 5980 4376 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5900 4475 50  0001 C CNN
 F 3 "~" H 5900 4475 50  0001 C CNN
 	1    5900 4475
 	1    0    0    -1  
@@ -41,7 +41,7 @@ AR Path="/61C40B21/61ABA7C2" Ref="J?"  Part="1"
 AR Path="/61C417C6/61ABA7C2" Ref="J14"  Part="1" 
 AR Path="/61C41B68/61ABA7C2" Ref="J?"  Part="1" 
 F 0 "J14" H 5980 3567 50  0000 L CNN
-F 1 "Conn_01x08" H 5980 3476 50  0000 L CNN
+F 1 "PORT B" H 5980 3476 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5900 3575 50  0001 C CNN
 F 3 "~" H 5900 3575 50  0001 C CNN
 	1    5900 3575
@@ -58,7 +58,7 @@ AR Path="/61C40B21/61C397EF" Ref="J?"  Part="1"
 AR Path="/61C417C6/61C397EF" Ref="J13"  Part="1" 
 AR Path="/61C41B68/61C397EF" Ref="J?"  Part="1" 
 F 0 "J13" H 5980 2667 50  0000 L CNN
-F 1 "Conn_01x08" H 5980 2576 50  0000 L CNN
+F 1 "PORT A" H 5980 2576 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5900 2675 50  0001 C CNN
 F 3 "~" H 5900 2675 50  0001 C CNN
 	1    5900 2675

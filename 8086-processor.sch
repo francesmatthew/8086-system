@@ -207,8 +207,6 @@ Text Label 2500 2950 0    50   ~ 0
 Text Label 2500 3050 0    50   ~ 0
 ALE
 Wire Wire Line
-	2500 3750 3200 3750
-Wire Wire Line
 	6600 5600 7700 5600
 Wire Wire Line
 	6800 5400 7700 5400
@@ -226,10 +224,6 @@ Wire Wire Line
 	6600 4750 6600 5600
 Wire Wire Line
 	6500 4850 6500 5700
-Wire Wire Line
-	3100 2650 3100 3650
-Wire Wire Line
-	3000 2650 3000 3550
 $Comp
 L power:VCC #PWR0181
 U 1 1 61A21B34
@@ -252,10 +246,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 3300 2150 50  0001 C CNN
 	1    3300 2150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2800 2650 2800 3350
-Wire Wire Line
-	2900 2650 2900 3450
 Wire Wire Line
 	3800 2650 4100 2650
 Connection ~ 4100 2650
@@ -315,25 +305,9 @@ ALE
 Text Label 3700 2650 3    50   ~ 0
 ALE
 Wire Wire Line
-	2500 3650 3100 3650
+	2500 3650 2800 3650
 Wire Wire Line
-	2500 3450 2900 3450
-Wire Wire Line
-	2500 3350 2800 3350
-Wire Wire Line
-	2500 3550 3000 3550
-Connection ~ 2800 3350
-Wire Wire Line
-	2800 3350 7400 3350
-Connection ~ 2900 3450
-Wire Wire Line
-	2900 3450 7400 3450
-Connection ~ 3000 3550
-Wire Wire Line
-	3000 3550 7400 3550
-Connection ~ 3100 3650
-Wire Wire Line
-	3100 3650 7400 3650
+	2500 3550 2900 3550
 Wire Wire Line
 	5600 1800 5600 5050
 Wire Wire Line
@@ -351,87 +325,13 @@ Wire Wire Line
 Wire Wire Line
 	5900 5350 2500 5350
 Wire Wire Line
-	2500 3850 3300 3850
+	2500 4350 4300 4350
 Wire Wire Line
-	2500 3950 3400 3950
+	2500 4450 4200 4450
 Wire Wire Line
-	2500 4050 3500 4050
+	4500 4150 4500 2250
 Wire Wire Line
-	2500 4150 4200 4150
-Wire Wire Line
-	2500 4250 4300 4250
-Wire Wire Line
-	2500 4350 4400 4350
-Wire Wire Line
-	2500 4650 4700 4650
-Wire Wire Line
-	2500 4850 4900 4850
-Wire Wire Line
-	3200 2650 3200 3750
-Connection ~ 3200 3750
-Wire Wire Line
-	3200 3750 7400 3750
-Wire Wire Line
-	3300 3850 3300 2650
-Connection ~ 3300 3850
-Wire Wire Line
-	3300 3850 7400 3850
-Wire Wire Line
-	3400 2650 3400 3950
-Connection ~ 3400 3950
-Wire Wire Line
-	3400 3950 7400 3950
-Wire Wire Line
-	3500 4050 3500 2650
-Connection ~ 3500 4050
-Wire Wire Line
-	3500 4050 7400 4050
-Wire Wire Line
-	2500 4750 4800 4750
-Wire Wire Line
-	2500 4550 4600 4550
-Wire Wire Line
-	2500 4450 4500 4450
-Wire Wire Line
-	4200 4150 4200 2250
-Connection ~ 4200 4150
-Connection ~ 4300 4250
-Connection ~ 4400 4350
-Connection ~ 4500 4450
-Connection ~ 4600 4550
-Connection ~ 4700 4650
-Connection ~ 4800 4750
-Wire Wire Line
-	4800 4750 6600 4750
-Wire Wire Line
-	4900 2250 4900 4850
-Connection ~ 4900 4850
-Wire Wire Line
-	4900 4850 6500 4850
-Wire Wire Line
-	4800 2250 4800 4750
-Wire Wire Line
-	4700 4650 6700 4650
-Wire Wire Line
-	4700 2250 4700 4650
-Wire Wire Line
-	4600 4550 6800 4550
-Wire Wire Line
-	4600 2250 4600 4550
-Wire Wire Line
-	4500 4450 6900 4450
-Wire Wire Line
-	4500 2250 4500 4450
-Wire Wire Line
-	4400 4350 7000 4350
-Wire Wire Line
-	4400 2250 4400 4350
-Wire Wire Line
-	4300 4250 7100 4250
-Wire Wire Line
-	4300 2250 4300 4250
-Wire Wire Line
-	4200 4150 7200 4150
+	4400 2250 4400 4250
 $Comp
 L power:VCC #PWR0185
 U 1 1 61DAEB06
@@ -519,38 +419,20 @@ Entry Wire Line
 	2900 650  2800 550 
 Entry Wire Line
 	2800 650  2700 550 
-Text Label 2800 650  3    50   ~ 0
-A0
-Text Label 3500 650  3    50   ~ 0
-A7
-Text Label 2900 650  3    50   ~ 0
-A1
-Text Label 3000 650  3    50   ~ 0
-A2
 Text Label 3100 650  3    50   ~ 0
+A0
+Text Label 3000 650  3    50   ~ 0
+A1
+Text Label 2900 650  3    50   ~ 0
+A2
+Text Label 2800 650  3    50   ~ 0
 A3
-Text Label 3200 650  3    50   ~ 0
-A4
-Text Label 3300 650  3    50   ~ 0
-A5
-Text Label 3400 650  3    50   ~ 0
-A6
-Text Label 4200 650  3    50   ~ 0
-A8
-Text Label 4300 650  3    50   ~ 0
-A9
-Text Label 4400 650  3    50   ~ 0
-A10
 Text Label 4500 650  3    50   ~ 0
-A11
-Text Label 4600 650  3    50   ~ 0
-A12
-Text Label 4700 650  3    50   ~ 0
-A13
-Text Label 4800 650  3    50   ~ 0
-A14
-Text Label 4900 650  3    50   ~ 0
-A15
+A8
+Text Label 4400 650  3    50   ~ 0
+A9
+Text Label 4300 650  3    50   ~ 0
+A10
 Text Label 5600 650  3    50   ~ 0
 A16
 Text Label 5700 650  3    50   ~ 0
@@ -882,7 +764,7 @@ L Switch:SW_Push SW25
 U 1 1 626B0BE8
 P 2250 6800
 F 0 "SW25" V 2296 6752 50  0000 R CNN
-F 1 "SW_Push" V 2205 6752 50  0000 R CNN
+F 1 "NMI" V 2205 6752 50  0000 R CNN
 F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 2250 7000 50  0001 C CNN
 F 3 "~" H 2250 7000 50  0001 C CNN
 	1    2250 6800
@@ -890,8 +772,6 @@ F 3 "~" H 2250 7000 50  0001 C CNN
 $EndComp
 Text Notes 3200 6400 2    50   ~ 0
 Non-Maskable\nInterrupt Button
-Text Label 4950 6250 0    50   ~ 0
-NMI
 $Comp
 L power:GND #PWR0193
 U 1 1 6233B1ED
@@ -918,7 +798,6 @@ Text HLabel 4950 6050 2    50   Output ~ 0
 ~WR
 Text HLabel 4950 6150 2    50   Output ~ 0
 ~RD
-NoConn ~ 4950 6350
 NoConn ~ 4950 6450
 NoConn ~ 4950 6550
 NoConn ~ 4950 6650
@@ -1056,8 +935,6 @@ Wire Notes Line
 Wire Notes Line
 	750  6500 2150 6500
 Wire Notes Line
-	2750 6200 2750 2650
-Wire Notes Line
 	2150 6200 3250 6200
 Wire Notes Line
 	1800 7650 3250 7650
@@ -1130,6 +1007,129 @@ Wire Wire Line
 	2250 7350 2300 7350
 Wire Wire Line
 	1900 7100 1900 7000
+Text Label 4800 650  3    50   ~ 0
+A14
+Text Label 4700 650  3    50   ~ 0
+A13
+Text Label 4600 650  3    50   ~ 0
+A12
+Text Label 4900 650  3    50   ~ 0
+A15
+Wire Wire Line
+	2500 4550 4600 4550
+Connection ~ 4600 4550
+Wire Wire Line
+	2500 4650 4700 4650
+Connection ~ 4700 4650
+Wire Wire Line
+	4900 4850 6500 4850
+Connection ~ 4900 4850
+Wire Wire Line
+	4800 4750 6600 4750
+Connection ~ 4800 4750
+Wire Wire Line
+	4600 4550 6800 4550
+Wire Wire Line
+	4700 4650 6700 4650
+Wire Wire Line
+	2500 4750 4800 4750
+Wire Wire Line
+	2500 4850 4900 4850
+Wire Wire Line
+	4600 2250 4600 4550
+Wire Wire Line
+	4700 2250 4700 4650
+Wire Wire Line
+	4800 2250 4800 4750
+Wire Wire Line
+	4900 2250 4900 4850
+Text Label 3300 650  3    50   ~ 0
+A5
+Text Label 3400 650  3    50   ~ 0
+A6
+Text Label 3500 650  3    50   ~ 0
+A7
+Wire Wire Line
+	2500 3750 3200 3750
+Connection ~ 3200 3750
+Wire Wire Line
+	2500 3850 3300 3850
+Connection ~ 3300 3850
+Text Label 3200 650  3    50   ~ 0
+A4
+Wire Wire Line
+	3500 4050 7400 4050
+Connection ~ 3500 4050
+Wire Wire Line
+	3400 3950 7400 3950
+Connection ~ 3400 3950
+Wire Wire Line
+	3200 3750 7400 3750
+Wire Wire Line
+	3300 3850 7400 3850
+Wire Wire Line
+	2500 3950 3400 3950
+Wire Wire Line
+	2500 4050 3500 4050
+Wire Wire Line
+	3500 4050 3500 2650
+Wire Wire Line
+	3400 2650 3400 3950
+Wire Wire Line
+	3300 3850 3300 2650
+Wire Wire Line
+	3200 2650 3200 3750
+Wire Notes Line
+	2750 6200 2750 2650
+Wire Wire Line
+	3000 2650 3000 3450
+Wire Wire Line
+	3100 2650 3100 3350
+Connection ~ 2800 3650
+Connection ~ 2900 3550
+Connection ~ 3000 3450
+Wire Wire Line
+	3000 3450 7400 3450
+Connection ~ 3100 3350
+Wire Wire Line
+	3100 3350 7400 3350
+Wire Wire Line
+	2900 3550 7400 3550
+Wire Wire Line
+	2800 3650 7400 3650
+Wire Wire Line
+	2500 3350 3100 3350
+Wire Wire Line
+	2800 2650 2800 3650
+Wire Wire Line
+	2500 3450 3000 3450
+Wire Wire Line
+	2900 2650 2900 3550
+Connection ~ 4200 4450
+Connection ~ 4300 4350
+Connection ~ 4400 4250
+Wire Wire Line
+	4400 4250 7100 4250
+Connection ~ 4500 4150
+Wire Wire Line
+	4500 4150 7200 4150
+Wire Wire Line
+	4200 4450 6900 4450
+Wire Wire Line
+	4300 4350 7000 4350
+Wire Wire Line
+	2500 4150 4500 4150
+Wire Wire Line
+	4200 2250 4200 4450
+Wire Wire Line
+	2500 4250 4400 4250
+Wire Wire Line
+	4300 2250 4300 4350
+Text Label 4200 650  3    50   ~ 0
+A11
+Text Label 4950 6250 0    50   ~ 0
+NMI
+NoConn ~ 4950 6350
 Wire Bus Line
 	9350 3100 9350 5600
 Wire Bus Line
