@@ -729,62 +729,6 @@ Wire Wire Line
 	8250 900  8350 900 
 Wire Wire Line
 	8250 950  8250 900 
-Wire Wire Line
-	8250 2150 7900 2150
-Connection ~ 8250 2150
-Wire Wire Line
-	8250 1350 8250 2150
-Wire Wire Line
-	8350 2050 9300 2050
-Connection ~ 8350 2050
-Wire Wire Line
-	8350 1350 8350 2050
-Wire Wire Line
-	8450 1950 7900 1950
-Connection ~ 8450 1950
-Wire Wire Line
-	8450 1350 8450 1950
-Wire Wire Line
-	8550 1850 9300 1850
-Connection ~ 8550 1850
-Wire Wire Line
-	8550 1350 8550 1850
-Wire Wire Line
-	8650 1750 7900 1750
-Connection ~ 8650 1750
-Wire Wire Line
-	8650 1350 8650 1750
-Wire Wire Line
-	8750 1650 9300 1650
-Connection ~ 8750 1650
-Wire Wire Line
-	8750 1350 8750 1650
-Wire Wire Line
-	8850 1550 7900 1550
-Connection ~ 8850 1550
-Wire Wire Line
-	8850 1350 8850 1550
-Wire Wire Line
-	8950 1450 9300 1450
-Connection ~ 8950 1450
-Wire Wire Line
-	8950 1350 8950 1450
-Wire Wire Line
-	9300 2150 8250 2150
-Wire Wire Line
-	7900 2050 8350 2050
-Wire Wire Line
-	9300 1950 8450 1950
-Wire Wire Line
-	7900 1850 8550 1850
-Wire Wire Line
-	9300 1750 8650 1750
-Wire Wire Line
-	7900 1650 8750 1650
-Wire Wire Line
-	9300 1550 8850 1550
-Wire Wire Line
-	7900 1450 8950 1450
 $Comp
 L Device:R_Pack08 RN2
 U 1 1 61F6E7F8
@@ -1336,6 +1280,59 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 7300 4350 50  0001 C CNN
 $EndComp
 Text HLabel 5950 4650 0    50   Input ~ 0
 ~EVEN_7_SEG_CS
+Wire Wire Line
+	7900 2050 8850 2050
+Wire Wire Line
+	7900 1950 8750 1950
+Wire Wire Line
+	7900 1850 8650 1850
+Wire Wire Line
+	7900 1750 8550 1750
+Wire Wire Line
+	7900 1650 8450 1650
+Wire Wire Line
+	7900 1550 8350 1550
+Wire Wire Line
+	7900 1450 8250 1450
+Wire Wire Line
+	8250 1350 8250 1450
+Connection ~ 8250 1450
+Wire Wire Line
+	8250 1450 9300 1450
+Wire Wire Line
+	8350 1350 8350 1550
+Connection ~ 8350 1550
+Wire Wire Line
+	8350 1550 9300 1550
+Wire Wire Line
+	8450 1350 8450 1650
+Connection ~ 8450 1650
+Wire Wire Line
+	8450 1650 9300 1650
+Wire Wire Line
+	8550 1350 8550 1750
+Connection ~ 8550 1750
+Wire Wire Line
+	8550 1750 9300 1750
+Wire Wire Line
+	8650 1350 8650 1850
+Connection ~ 8650 1850
+Wire Wire Line
+	8650 1850 9300 1850
+Wire Wire Line
+	8750 1350 8750 1950
+Connection ~ 8750 1950
+Wire Wire Line
+	8750 1950 9300 1950
+Wire Wire Line
+	7900 2150 8950 2150
+Wire Wire Line
+	8850 1350 8850 2050
+Connection ~ 8850 2050
+Wire Wire Line
+	8850 2050 9300 2050
+Wire Wire Line
+	8950 1350 8950 2150
 Wire Bus Line
 	2550 1200 2550 1600
 Wire Bus Line
@@ -1343,11 +1340,14 @@ Wire Bus Line
 Wire Bus Line
 	2550 2000 2550 2400
 Wire Bus Line
-	10500 1250 10500 2050
+	6600 3650 6600 4450
 Wire Bus Line
 	8950 4350 8950 5150
 Wire Bus Line
-	6600 3650 6600 4450
+	10500 1250 10500 2050
 Wire Bus Line
 	1500 6000 1500 6800
+Connection ~ 8950 2150
+Wire Wire Line
+	8950 2150 9300 2150
 $EndSCHEMATC

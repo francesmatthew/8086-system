@@ -271,9 +271,9 @@ F 3 "" H 7500 3025 50  0001 C CNN
 	1    7500 3025
 	1    0    0    -1  
 $EndComp
-Text HLabel 8000 2525 2    50   Output ~ 0
-~CS_PPI1
 Text HLabel 8000 2625 2    50   Output ~ 0
+~CS_PPI1
+Text HLabel 8000 2525 2    50   Output ~ 0
 ~CS_PPI2
 Text HLabel 8000 2725 2    50   Output ~ 0
 ~CS_PPI3
@@ -287,11 +287,11 @@ Text HLabel 8000 4875 2    50   Output ~ 0
 ~CS_UART
 Text HLabel 8000 4775 2    50   Output ~ 0
 ~CS_LCD
-Text HLabel 8000 4375 2    50   Output ~ 0
-~CS_7_SEG_0
 Text HLabel 8000 4475 2    50   Output ~ 0
-~CS_7_SEG_1
+~CS_7_SEG_0
 Text HLabel 8000 4575 2    50   Output ~ 0
+~CS_7_SEG_1
+Text HLabel 8000 4375 2    50   Output ~ 0
 ~CS_LED
 Text HLabel 8000 4675 2    50   Output ~ 0
 ~CS_SW
