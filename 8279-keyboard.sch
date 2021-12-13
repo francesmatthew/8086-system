@@ -869,8 +869,6 @@ Wire Wire Line
 	7950 3350 7950 4100
 Wire Wire Line
 	7250 4100 7250 3350
-Wire Wire Line
-	7250 1850 6950 1850
 Connection ~ 7250 1850
 Connection ~ 7250 2600
 Wire Wire Line
@@ -878,7 +876,6 @@ Wire Wire Line
 Connection ~ 7250 3350
 Wire Wire Line
 	7250 3350 7250 2600
-Connection ~ 6950 1850
 Wire Wire Line
 	6550 1850 6550 2600
 Connection ~ 6550 1850
