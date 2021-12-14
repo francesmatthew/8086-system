@@ -50,17 +50,17 @@ PAL16L8 I/O Address Decoding
 
 ![16550 UART Interface](./imgs/UART-interface-UART-interface.png)
 
-Programmable Peripheral Interface 1
+8255 Programmable Peripheral Interface 1
 
-![Programmable Peripheral Interface 1](./imgs/peripheral-interface-odd-PPI1.png)
+![8255 Programmable Peripheral Interface 1](./imgs/peripheral-interface-odd-PPI1.png)
 
-Programmable Peripheral Interface 2
+8255 Programmable Peripheral Interface 2
 
-![Programmable Peripheral Interface 2](./imgs/peripheral-interface-even-PPI2.png)
+![8255 Programmable Peripheral Interface 2](./imgs/peripheral-interface-even-PPI2.png)
 
-Programmable Peripheral Interface 3
+8255 Programmable Peripheral Interface 3
 
-![Programmable Peripheral Interface 3](./imgs/peripheral-interface-odd-PPI3.png)
+![8255 Programmable Peripheral Interface 3](./imgs/peripheral-interface-odd-PPI3.png)
 
 LCD, 7-Segment Displays, LEDs, DIP Switches
 
